@@ -1,0 +1,19 @@
+@import 'global/reset';
+@import 'global/fonts';
+@import 'global/vars';
+@import 'global/global';
+@import 'global/mixins';
+
+
+// Main page:
+
+@import 'components/header';
+@import 'components/banners';
+@import 'components/go-wok';
+@import 'components/global-nav';
+@import 'components/products-section';
+@import 'components/product-card';
+@import 'components/novelties';
+@import 'components/our-menu';
+@import 'components/promotions';
+@import 'components/footer';

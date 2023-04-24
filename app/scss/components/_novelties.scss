@@ -1,0 +1,64 @@
+.novelties {
+  margin-bottom: 57px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 12px;
+  }
+}
+
+.novelties-sidebar {
+  max-width: 270px;
+
+  &__head {
+    @extend .product-categories__head;
+  }
+
+  &__list {
+    @extend .product-categories__list;
+  }
+
+  &__item {
+    padding: 10px 5px;
+
+    &:nth-child(2) {
+      .novelties-sidebar__link {
+        background-image: url(../images/products/new/mini2.jpg);
+      }
+    }
+
+    &:nth-child(3) {
+      .novelties-sidebar__link {
+        background-image: url(../images/products/new/mini3.jpg);
+      }
+    }
+  }
+
+  &__link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: $c-black;
+    @include line-clamp(1);
+    padding-left: 30px;
+    background-image: url(../images/products/new/mini1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+
+
+  &__price {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+}

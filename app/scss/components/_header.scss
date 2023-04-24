@@ -1,0 +1,141 @@
+.header {
+  background-color: $c-black;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 60px;
+
+  &__nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #312e2b;
+  }
+}
+
+.header-top {
+  background-color: #413d3a;
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  gap: 80px;
+
+  &__menu {
+    display: flex;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $c-white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+
+    padding: {
+      top: 18px;
+      right: 20px;
+      bottom: 18px;
+      left: 20px;
+    }
+
+    ;
+    background-color: transparent;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+
+    p {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+
+  &__cart-link {
+    position: relative;
+
+    span {
+      position: absolute;
+      left: -20px;
+      top: -10px;
+      text-decoration: none;
+      color: $c-white;
+      font-size: 13px;
+    }
+  }
+}
+
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    margin-left: auto;
+    margin-right: 88px;
+    text-transform: uppercase;
+    color: #ff0000;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c2525;
+    padding: 19px 13px;
+    min-width: 353px;
+  }
+
+  &__input {
+    // width: 100%;
+    background-color: transparent;
+
+    // padding: 19px 13px;
+    &::placeholder {
+      color: $c-white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 19px;
+      font-weight: 500;
+    }
+  }
+}
+
+.header-bottom {
+  background-color: $accent;
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    color: $c-white;
+    font-size: 19px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    background-color: transparent;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: $c-white;
+      color: $accent;
+    }
+  }
+}

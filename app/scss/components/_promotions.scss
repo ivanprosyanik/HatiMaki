@@ -1,0 +1,28 @@
+.promotions {
+  margin-bottom: 67px;
+  &__nav {
+    max-width: 1068px;
+  }
+
+  &__content {
+    max-width: 1068px;
+    position: relative;
+  }
+
+  &__actions {
+    position: absolute;
+    top: -65px;
+    right: 0;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 17px 11px;
+  }
+
+  &__link.active {
+    background-color: $accent;
+  }
+}

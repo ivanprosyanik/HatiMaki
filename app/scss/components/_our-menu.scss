@@ -1,0 +1,31 @@
+.our-menu {
+  margin-bottom: 47px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 258px);
+    gap: 28px 12px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__img{
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__link {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $c-black;
+  }
+}
