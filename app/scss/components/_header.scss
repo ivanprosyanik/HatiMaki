@@ -27,7 +27,7 @@
   background-color: #413d3a;
   display: flex;
   align-items: center;
-  padding-right: 13px;
+  padding-right: 17px;
   gap: 80px;
 
   &__menu {
@@ -39,17 +39,14 @@
     color: $c-white;
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
-
-    padding: {
-      top: 18px;
-      right: 20px;
-      bottom: 18px;
-      left: 20px;
-    }
-
-    ;
+    padding: 25px 17px;
     background-color: transparent;
     transition: background-color .3s ease-in-out;
+
+    &::before {
+      min-width: 17px;
+      height: 20px;
+    }
 
     &:hover {
       background-color: $accent;
