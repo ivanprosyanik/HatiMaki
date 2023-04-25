@@ -1,0 +1,22 @@
+.alcohol {
+  &__descr {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $c-black;
+    max-width: 1031px;
+    margin-bottom: 30px;
+
+    p:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    p:last-child {
+      margin-bottom: 33px;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+}

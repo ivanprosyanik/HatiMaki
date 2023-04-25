@@ -1,0 +1,58 @@
+@include('global/_head.html', {
+pageName: 'Паста'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Паста, в ресторане Hatimaki!!</h1>
+  <section class="pasta">
+    <div class="container">
+      <div class="section-inner pasta__inner">
+        @include('parts/_products-categories.html', {
+        "page": "pasta",
+        })
+        <div class="categories-content">
+          <h2 class="simple-title pasta__simple-title">ПАСТЫ</h2>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/pasta/1.jpg" alt="pasta 1">
+                </a>
+                <p class="product-card__name">White Seabass maki (8 шт.)</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/pasta/2.jpg" alt="pasta 2">
+                </a>
+                <p class="product-card__name">Unagi Seabass maki (8 шт.)</p>
+                <span class="product-card__price">10.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/pasta/3.jpg" alt="pasta 3">
+                </a>
+                <p class="product-card__name">Nobu maki (8 шт.)</p>
+                <span class="product-card__price">10.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

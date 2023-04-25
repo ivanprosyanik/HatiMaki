@@ -70,6 +70,7 @@
 }
 
 .product-slider--1 {
+
   &__actions,
   &__btn {
     visibility: hidden;
@@ -90,14 +91,28 @@
   }
 
   &__item {
-    padding: 14px 23px;
+    padding: 14px 11px;
     background-color: #F8F7F7;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 
-    &:last-child {
+    &--flex {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    &--alcohol {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    &:hover {
+      .product-categories__link {
+        color: #ff0000;
+      }
     }
   }
 
@@ -106,14 +121,19 @@
     color: $c-black;
     font-family: 'Open Sans', sans-serif;
     padding-left: 10px;
+    transition: color .3s ease-in-out;
 
     &::before {
       content: '>';
       padding-right: 11px;
     }
 
-    &:last-child {
-      display: flex;
+    &--active {
+      color: #ff0000;
+
+      &::before {
+        color: $c-black;
+      }
     }
   }
 
@@ -122,6 +142,33 @@
     min-width: 22px;
     height: 22px;
     font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 9px;
+      height: 2px;
+      background-color: $c-white;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 9px;
+      background-color: $c-white;
+    }
+
+    &.active {
+      &::after {
+        content: none;
+      }
+    }
   }
 }
 

@@ -1,0 +1,93 @@
+@include('global/_head.html', {
+pageName: 'Новые блюда'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Новые блюда в ресторане Hatimaki!!</h1>
+  <section class="complects">
+    <div class="container">
+      <div class="section-inner complects__inner">
+        @include('parts/_products-categories.html', {
+        "page": "complects",
+        })
+        <div class="categories-content">
+          <h2 class="simple-title complects__simple-title">КОМПЛЕКТЫ ПО СПЕЦИАЛЬНОЙ ЦЕНЕ</h2>
+
+
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/complects/1.jpg" alt="complect 1">
+                </a>
+                <p class="product-card__name">White Seabass maki (8 шт.)</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/complects/2.jpg" alt="complect 2">
+                </a>
+                <p class="product-card__name">Unagi Seabass maki (8 шт.)</p>
+                <span class="product-card__price">10.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/complects/3.jpg" alt="complect 3">
+                </a>
+                <p class="product-card__name">Nobu maki (8 шт.)</p>
+                <span class="product-card__price">10.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/complects/4.jpg" alt="complect 4">
+                </a>
+                <p class="product-card__name">Паста с морепродуктами</p>
+                <span class="product-card__price">10.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/complects/5.jpg" alt="complect 5">
+                </a>
+                <p class="product-card__name">Chicken Panko</p>
+                <span class="product-card__price">12.20€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/complects/6.jpg" alt="complect 6">
+                </a>
+                <p class="product-card__name">Паста Карбонара</p>
+                <span class="product-card__price">10.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

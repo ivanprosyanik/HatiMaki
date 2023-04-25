@@ -4,50 +4,64 @@
   </div>
   <ul class="product-categories__list">
     <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+      <a class="product-categories__link @if(context.page === 'new-dishes') {product-categories__link--active}"
+        href="new-dishes.html">
         Новые блюда
       </a>
     </li>
     <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+      <a class="product-categories__link @if(context.page === 'complects') {product-categories__link--active}"
+        href="complects.html">
         Комплекты по специальной цене
       </a>
     </li>
     <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+      <a class="product-categories__link @if(context.page === 'wok-page') {product-categories__link--active}" href="#">
         Блюда WOK
       </a>
     </li>
     <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+      <a class="product-categories__link @if(context.page === 'pasta') {product-categories__link--active}"
+        href="pasta.html">
         Пасты
       </a>
     </li>
     <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+      <a class="product-categories__link @if(context.page === 'salads') {product-categories__link--active}"
+        href="salads.html">
         Салаты
       </a>
     </li>
     <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+      <a class="product-categories__link @if(context.page === 'desserts') {product-categories__link--active}"
+        href="desserts.html">
         Десерты
       </a>
     </li>
     <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+      <a class="product-categories__link @if(context.page === 'snacks') {product-categories__link--active}"
+        href="snacks.html">
         Закуски
       </a>
     </li>
     <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+      <a class="product-categories__link @if(context.page === 'sales') {product-categories__link--active}"
+        href="sales.html">
         Акции
       </a>
     </li>
-    <li class="product-categories__item">
-      <a class="product-categories__link" href="#">
+    <li class="product-categories__item product-categories__item--flex">
+      <a class="product-categories__link @if(context.page === 'drinks') {product-categories__link--active}"
+        href="drinks.html">
         Напитки
       </a>
-      <button class="product-categories__btn" type="button">+</button>
+      <button class="product-categories__btn" type="button"></button>
+    </li>
+    <li class="product-categories__item product-categories__item--alcohol">
+      <a class="product-categories__link @if(context.page === 'alcohol') {product-categories__link--active}"
+        href="alcohol.html">
+        Алкогольные напитки
+      </a>
     </li>
   </ul>
 </div>

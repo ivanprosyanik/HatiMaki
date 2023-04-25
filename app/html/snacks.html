@@ -1,0 +1,157 @@
+@include('global/_head.html', {
+pageName: 'Закуски'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Десерты, в ресторане Hatimaki!!</h1>
+  <section class="snacks">
+    <div class="container">
+      <div class="section-inner snacks__inner">
+        @include('parts/_products-categories.html', {
+        "page": "snacks",
+        })
+        <div class="categories-content">
+          <h2 class="simple-title snacks__simple-title">Закуски</h2>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/1.jpg" alt="snacks 1">
+                </a>
+                <p class="product-card__name">Tori Gyoza</p>
+                <span class="product-card__price">7.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/2.jpg" alt="snacks 2">
+                </a>
+                <p class="product-card__name">Yasai Gyoza</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/3.jpg" alt="snacks 3">
+                </a>
+                <p class="product-card__name">Кальмары с кумином</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/4.jpg" alt="snacks 4">
+                </a>
+                <p class="product-card__name">Кольца с кальмаром</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/5.jpg" alt="snacks 5">
+                </a>
+                <p class="product-card__name">Креветочные чипсы</p>
+                <span class="product-card__price">3.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/6.jpg" alt="snacks 6">
+                </a>
+                <p class="product-card__name">Лепешка с сыром и укропом</p>
+                <span class="product-card__price">3.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/7.jpg" alt="snacks 7">
+                </a>
+                <p class="product-card__name">Лепешка с чесноком и сыром</p>
+                <span class="product-card__price">3.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/8.jpg" alt="snacks 8">
+                </a>
+                <p class="product-card__name">Луковые кольца</p>
+                <span class="product-card__price">5.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/9.jpg" alt="snacks 9">
+                </a>
+                <p class="product-card__name">Мидии в сливочном соусе</p>
+                <span class="product-card__price">10.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/10.jpg" alt="snacks 10">
+                </a>
+                <p class="product-card__name">Севиче из лосося</p>
+                <span class="product-card__price">10.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/11.jpg" alt="snacks 11">
+                </a>
+                <p class="product-card__name">Севиче из тигровых креветок</p>
+                <span class="product-card__price">12.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/snacks/12.jpg" alt="snacks 12">
+                </a>
+                <p class="product-card__name">Тартар из лосося</p>
+                <span class="product-card__price">10.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

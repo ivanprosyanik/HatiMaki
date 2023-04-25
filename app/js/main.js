@@ -67,4 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+  const btnPlus = document.querySelector('.product-categories__btn');
+  const alcoDrink = document.querySelector('.product-categories__item--alcohol');
+
+  btnPlus.addEventListener('click', () => {
+    btnPlus.classList.toggle('active');
+    alcoDrink.classList.toggle('active');
+  });
+
+
 });

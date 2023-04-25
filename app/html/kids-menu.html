@@ -1,0 +1,70 @@
+@include('global/_head.html', {
+pageName: 'Детское меню'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Детское меню, в ресторане Hatimaki!!</h1>
+  <section class="kids">
+    <div class="container">
+      <div class="section-inner kids__inner">
+        @include('parts/_products-categories.html')
+        <div class="categories-content">
+          <h2 class="simple-title kids__simple-title">Детское меню</h2>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/kids/1.jpg" alt="kids 1">
+                </a>
+                <p class="product-card__name">Kid Set (32 шт.)</p>
+                <div class="product-card__price product-card__price-box">
+                  <span class="product-card__price-old">15.50€</span>
+                  <span class="product-card__price-new">13.18€</span>
+                </div>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/kids/2.jpg" alt="kids 2">
+                </a>
+                <p class="product-card__name">Картофель фри с соусом</p>
+                <span class="product-card__price">3.10€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/kids/3.jpg" alt="kids 3">
+                </a>
+                <p class="product-card__name">Куриный суп (детский)</p>
+                <span class="product-card__price">3.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/kids/4.jpg" alt="kids 4">
+                </a>
+                <p class="product-card__name">Макароны с сыром</p>
+                <span class="product-card__price">3.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

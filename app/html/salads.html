@@ -1,0 +1,91 @@
+@include('global/_head.html', {
+pageName: 'Салаты'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Паста, в ресторане Hatimaki!!</h1>
+  <section class="salads">
+    <div class="container">
+      <div class="section-inner salads__inner">
+        @include('parts/_products-categories.html', {
+        "page": "salads",
+        })
+        <div class="categories-content">
+          <h2 class="simple-title salads__simple-title">САЛАТЫ</h2>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/salads/1.jpg" alt="salads 1">
+                </a>
+                <p class="product-card__name">Салат с тунцом</p>
+                <span class="product-card__price">10.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/salads/2.jpg" alt="salads 2">
+                </a>
+                <p class="product-card__name">Кайсо салат с ореховым соусом</p>
+                <span class="product-card__price">10.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/salads/3.jpg" alt="salads 3">
+                </a>
+                <p class="product-card__name">Салат с уткой</p>
+                <span class="product-card__price">10.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/salads/4.jpg" alt="salads 4">
+                </a>
+                <p class="product-card__name">Салат цезарь с креветками</p>
+                <span class="product-card__price">10.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/salads/5.jpg" alt="salads 5">
+                </a>
+                <p class="product-card__name">Салат цезарь с курицой</p>
+                <span class="product-card__price">10.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/salads/6.jpg" alt="salads 6">
+                </a>
+                <p class="product-card__name">Свежий салат с тигровыми креветками</p>
+                <span class="product-card__price">10.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

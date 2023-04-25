@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -40,6 +41,12 @@ body {
   overflow: hidden;
 }
 
+.section-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
 .section-title {
   padding: 16px 9px;
   font-size: 19px;
@@ -53,6 +60,14 @@ body {
   font-weight: 400;
   font-size: 25px;
   color: $c-black;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.categories__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 12px;
 }
 
 .icon {
@@ -148,5 +163,30 @@ body {
     &::before {
       mask-image: url(../images/sprite.svg#icon-phone);
     }
+  }
+}
+
+.alcohol-link {
+  display: inline-block;
+  padding: 0 18px 6px;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $c-black;
+  font-weight: 400;
+  margin-bottom: 50px;
+  transition: color .3s ease-in-out, opacity .2s ease-in-out;
+
+  &:hover {
+    color: $accent;
+
+    .alcohol-link__img {
+      opacity: .7;
+    }
+  }
+
+  &__img {
+    margin-bottom: 9px;
+    transition: opacity .2s ease-in-out;
   }
 }
