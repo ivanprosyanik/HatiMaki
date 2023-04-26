@@ -1,0 +1,66 @@
+@include('global/_head.html', {
+pageName: 'Все суши'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Все суши, в ресторане Hatimaki!!</h1>
+  <section class="all-sushi">
+    <div class="container">
+      <div class="section-inner all-sushi__inner">
+        @include('parts/_products-categories.html')
+        <div class="categories-content">
+          <h2 class="simple-title all-sushi__simple-title">ДОСТАВКА СУШИ HATIMAKI</h2>
+
+          <ul class="categories__list all-sushi__list">
+            <li class="all-sushi__item">
+              <a class="all-sushi__link" href="sashimi-page.html">
+                <img class="all-sushi__img" src="images/all-sushi/1.jpg" alt="all-sushi category 1">
+
+                САШИМИ
+              </a>
+            </li>
+            <li class="all-sushi__item">
+              <a class="all-sushi__link" href="tataki-page.html">
+                <img class="all-sushi__img" src="images/all-sushi/2.jpg" alt="all-sushi category 2">
+
+                ТАТАКИ
+              </a>
+            </li>
+            <li class="all-sushi__item">
+              <a class="all-sushi__link" href="nigiri-page.html">
+                <img class="all-sushi__img" src="images/all-sushi/3.jpg" alt="all-sushi category 3">
+
+                НИГИРИ (1 ШТ.)
+              </a>
+            </li>
+            <li class="all-sushi__item">
+              <a class="all-sushi__link" href="rolls-page.html">
+                <img class="all-sushi__img" src="images/all-sushi/4.jpg" alt="all-sushi category 4">
+
+                РОЛЛЫ (8 ШТ.)
+              </a>
+            </li>
+            <li class="all-sushi__item">
+              <a class="all-sushi__link" href="hot-rolls-page.html">
+                <img class="all-sushi__img" src="images/all-sushi/5.jpg" alt="all-sushi category 5">
+
+                ЗАПЕЧЕННЫЕ РОЛЛЫ (8 ШТ.)
+              </a>
+            </li>
+            <li class="all-sushi__item">
+              <a class="all-sushi__link" href="complects-page.html">
+                <img class="all-sushi__img" src="images/all-sushi/6.jpg" alt="all-sushi category 6">
+
+                СУШИ КОМПЛЕКТЫ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

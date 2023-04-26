@@ -1,0 +1,122 @@
+@include('global/_head.html', {
+pageName: 'Комплекты'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Комплекты, в ресторане Hatimaki!!</h1>
+  <section class="sashimi">
+    <div class="container">
+      <div class="section-inner sashimi__inner">
+        @include('parts/_products-categories.html')
+        <div class="categories-content">
+          <h2 class="simple-title sashimi__simple-title">Комплекты</h2>
+
+          <ul class="categories__list sashimi__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/complects/1.jpg" alt="complects 1">
+                </a>
+                <p class="product-card__name">Family Set (32 шт.)</p>
+                <div class="product-card__price product-card__price-box">
+                  <span class="product-card__price-old">29.80€</span>
+                  <span class="product-card__price-new">25.33€</span>
+                </div>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/complects/2.jpg" alt="complects 2">
+                </a>
+                <p class="product-card__name">Kid Set (32 шт.)</p>
+                <div class="product-card__price product-card__price-box">
+                  <span class="product-card__price-old">15.50€</span>
+                  <span class="product-card__price-new">13.18€</span>
+                </div>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/complects/3.jpg" alt="complects 3">
+                </a>
+                <p class="product-card__name">Philadelphia Set (40 шт.)</p>
+                <div class="product-card__price product-card__price-box">
+                  <span class="product-card__price-old">41.20€</span>
+                  <span class="product-card__price-new">35.02€</span>
+                </div>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/complects/4.jpg" alt="complects 4">
+                </a>
+                <p class="product-card__name">Set Bento (32 шт.)</p>
+                <div class="product-card__price product-card__price-box">
+                  <span class="product-card__price-old">34.30€</span>
+                  <span class="product-card__price-new">27.44€</span>
+                </div>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/complects/5.jpg" alt="complects 5">
+                </a>
+                <p class="product-card__name">Set Classic (56 шт.)</p>
+                <div class="product-card__price product-card__price-box">
+                  <span class="product-card__price-old">41.50€</span>
+                  <span class="product-card__price-new">35.28€</span>
+                </div>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/complects/6.jpg" alt="complects 7">
+                </a>
+                <p class="product-card__name">Set Dinamit (40 шт.)</p>
+                <div class="product-card__price product-card__price-box">
+                  <span class="product-card__price-old">40.25€</span>
+                  <span class="product-card__price-new">34.21€</span>
+                </div>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/complects/7.jpg" alt="complects 7">
+                </a>
+                <p class="product-card__name">Set Gourmet (32 шт.)</p>
+                <div class="product-card__price product-card__price-box">
+                  <span class="product-card__price-old">26.10€</span>
+                  <span class="product-card__price-new">20.88€</span>
+                </div>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

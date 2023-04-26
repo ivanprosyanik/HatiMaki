@@ -1,0 +1,28 @@
+.all-sushi {
+
+  &__list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $c-black;
+    font-weight: 300;
+    text-align: center;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: $accent;
+
+      .all-sushi__img {
+        opacity: .7;
+      }
+    }
+  }
+  
+  &__img {
+    margin-bottom: 5px;
+    transition: opacity .2s ease-in-out;
+  }
+}

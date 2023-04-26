@@ -45,6 +45,11 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+
+  &.sashimi__inner {
+    justify-content: initial;
+    gap: 20px;
+  }
 }
 
 .section-title {
