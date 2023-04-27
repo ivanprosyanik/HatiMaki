@@ -106,6 +106,12 @@ body {
     }
   }
 
+  &--register {
+    &::before {
+      mask-image: url(../images/sprite.svg#icon-register);
+    }
+  }
+
   &--question {
     &::before {
       mask-image: url(../images/sprite.svg#icon-question);

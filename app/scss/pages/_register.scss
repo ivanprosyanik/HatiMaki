@@ -1,0 +1,64 @@
+.register {
+  font-family: 'Open Sans';
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    color: $c-black;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    color: #ff0000;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: $c-black;
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    &-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 105px;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &-bottom {
+      margin-top: 73px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      background-color: #f8f8f8;
+      padding: 18px 23px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__label {
+    color: $c-black;
+    font-size: 22px;
+    white-space: nowrap;
+    span {
+      color: #ff0000;
+      margin-right: 14px;
+    }
+  }
+
+  &__field {
+    max-width: 948px;
+    color: $c-black;
+    @extend .log-in__field;
+  }
+  
+}
