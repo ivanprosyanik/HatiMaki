@@ -13,26 +13,28 @@
 <header class="header">
   <div class="container">
     <nav class="header__nav">
-      <a class="logo">
+      <a class="logo" href="index.html">
         <img class="logo__img" src="images/logo.svg" alt="Логотип">
       </a>
       <div class="header-content">
         <div class="header-top">
           <ul class="header-top__menu">
             <li class="header-top__item">
-              <a class="header-top__link icon icon--home" href="#">Главная</a>
+              <a class="header-top__link icon icon--home" href="index.html">Главная</a>
             </li>
             <li class="header-top__item">
-              <a class="header-top__link icon icon--heart" href="#">Список желаний</a>
+              <a class="header-top__link icon icon--heart" href="wish-list-page.html">Список желаний</a>
             </li>
-            <li class="header-top__item">
-              <a class="header-top__link icon icon--user" href="#">Войти</a>
+            <li class="header-top__item header-top__item--dropdown">
+              <a class="header-top__link header-top__link--select icon icon--user" href="log-in.html">Войти</a>
+              <a class="header-top__link header-top__link--dropdown-content icon icon--register" href="register.html">Регистрация</a>
             </li>
+
             <li class="header-top__item">
               <a class="header-top__link icon icon--question" href="#">Задать вопрос</a>
             </li>
             <li class="header-top__item">
-              <a class="header-top__link icon icon--message" href="#">Контакты</a>
+              <a class="header-top__link icon icon--message" href="contacts.html">Контакты</a>
             </li>
           </ul>
           <div class="header-top__cart">
@@ -56,22 +58,22 @@
         <div class="header-bottom">
           <ul class="header-bottom__menu menu">
             <li class="header-bottom__item menu__item">
-              <a class="header-bottom__link menu__item" href="#">Меню ресторана</a>
+              <a class="header-bottom__link menu__item" href="index.html#our-menu">Меню ресторана</a>
             </li>
             <li class="header-bottom__item menu__item">
-              <a class="header-bottom__link menu__item" href="#">Акции и новинки</a>
+              <a class="header-bottom__link menu__item" href="sales.html">Акции и новинки</a>
             </li>
             <li class="header-bottom__item menu__item">
-              <a class="header-bottom__link menu__item" href="#">Блюда WOK</a>
+              <a class="header-bottom__link menu__item" href="wok.html">Блюда WOK</a>
             </li>
             <li class="header-bottom__item menu__item">
-              <a class="header-bottom__link menu__item" href="#">БИЗНЕС ЛАНЧ</a>
+              <a class="header-bottom__link menu__item" href="business.html">БИЗНЕС ЛАНЧ</a>
             </li>
             <li class="header-bottom__item menu__item">
-              <a class="header-bottom__link menu__item" href="#">ДОСТАВКА</a>
+              <a class="header-bottom__link menu__item" href="delivery.html">ДОСТАВКА</a>
             </li>
             <li class="header-bottom__item menu__item">
-              <a class="header-bottom__link menu__item" href="#">О НАС</a>
+              <a class="header-bottom__link menu__item" href="about.html">О НАС</a>
             </li>
           </ul>
         </div>
@@ -81,74 +83,72 @@
   </div>
 </header>
 
-<main class="main">
-  <h1 class="sr-only">Hatimaki - лучший ресторан в твоем городе!</h1>
-  <div class="container">
-    <section class="banners">
-  <div class="container">
-    <div class="banners__inner">
-      <div class="banners__slider swiper">
-        <ul class="banners__list swiper-wrapper">
-          <li class="banners__item swiper-slide">
-            <img class="banners__img" src="images/banners/1.jpg" alt="баннер">
-          </li>
-          <li class="banners__item swiper-slide">
-            <img class="banners__img" src="images/banners/2.jpg" alt="баннер">
-          </li>
-          <li class="banners__item swiper-slide">
-            <img class="banners__img" src="images/banners/3.jpg" alt="баннер">
-          </li>
-          <li class="banners__item swiper-slide">
-            <img class="banners__img" src="images/banners/4.jpg" alt="баннер">
-          </li>
-        </ul>
-        <div class="banners__actions">
-          <div class="banners__btn banners__btn--next icon icon--chevron-right" type="button"></div>
-          <div class="banners__dots"></div>
-          <div class="banners__btn banners__btn--prev icon icon--chevron-left" type="button"></div>
-        </div>
+  <main class="main">
+    <h1 class="sr-only">Hatimaki - лучший ресторан в твоем городе!</h1>
+    <div class="container">
+      <section class="banners">
+  <div class="banners__inner">
+    <div class="banners__slider swiper">
+      <ul class="banners__list swiper-wrapper">
+        <li class="banners__item swiper-slide">
+          <img class="banners__img" src="images/banners/1.jpg" alt="баннер">
+        </li>
+        <li class="banners__item swiper-slide">
+          <img class="banners__img" src="images/banners/2.jpg" alt="баннер">
+        </li>
+        <li class="banners__item swiper-slide">
+          <img class="banners__img" src="images/banners/3.jpg" alt="баннер">
+        </li>
+        <li class="banners__item swiper-slide">
+          <img class="banners__img" src="images/banners/4.jpg" alt="баннер">
+        </li>
+      </ul>
+      <div class="banners__actions">
+        <div class="banners__btn banners__btn--next icon icon--chevron-right" type="button"></div>
+        <div class="banners__dots"></div>
+        <div class="banners__btn banners__btn--prev icon icon--chevron-left" type="button"></div>
       </div>
-      <div class="banners-mini">
-        <img class="banners-mini__img" src="./images/banners/5.jpg" alt="">
-        <img class="banners-mini__img" src="./images/banners/6.jpg" alt="">
-      </div>
+    </div>
+    <div class="banners-mini">
+      <img class="banners-mini__img" src="./images/banners/5.jpg" alt="">
+      <img class="banners-mini__img" src="./images/banners/6.jpg" alt="">
     </div>
   </div>
 </section>
-  </div>
-    <section class="go-wok">
+    </div>
+      <section class="go-wok">
   <div class="container">
     <div class="go-wok__content">
       <h2 class="title go-wok__title">
         Собери сам свой
       </h2>
-      <a class="go-wok__link icon icon--arrow-right" href="#">WOK</a>
+      <a class="go-wok__link icon icon--arrow-right" href="wok.html">WOK</a>
     </div>
   </div>
 </section>
-    <section class="global-nav">
+      <section class="global-nav">
   <ul class="global-nav__menu">
     <li class="global-nav__item">
-      <a class="global-nav__link" href="#">Меню ресторана</a>
+      <a class="global-nav__link" href="#our-menu">Меню ресторана</a>
     </li>
     <li class="global-nav__item">
-      <a class="global-nav__link" href="#">Акции и новинки</a>
+      <a class="global-nav__link" href="sales.html">Акции и новинки</a>
     </li>
     <li class="global-nav__item">
       <a class="global-nav__link" href="#">Блюда WOK</a>
     </li>
     <li class="global-nav__item">
-      <a class="global-nav__link" href="#">БИЗНЕС ЛАНЧ</a>
+      <a class="global-nav__link" href="business.html">БИЗНЕС ЛАНЧ</a>
     </li>
     <li class="global-nav__item">
-      <a class="global-nav__link" href="#">ДОСТАВКА</a>
+      <a class="global-nav__link" href="delivery.html">ДОСТАВКА</a>
     </li>
     <li class="global-nav__item">
-      <a class="global-nav__link" href="#">О НАС</a>
+      <a class="global-nav__link" href="about.html">О НАС</a>
     </li>
   </ul>
 </section>
-    <section class="product">
+      <section class="product">
   <div class="container">
     <div class="product__inner">
       <div class="product__content">
@@ -173,7 +173,7 @@
               <a class="product-nav__name" href="#complekts">СУШИ КОМПЛЕКТЫ</a>
             </li>
             <li class="product-nav__item">
-              <a class="product-nav__name" href="#">ВСЕ СУШИ</a>
+              <a class="product-nav__name" href="all-sushi.html">ВСЕ СУШИ</a>
             </li>
           </ul>
         </nav>
@@ -775,7 +775,7 @@
                   </article>
                 </li>
 
-                
+
               </ul>
               <div class="product-slider__dots"></div>
             </div>
@@ -784,62 +784,76 @@
         </ul>
       </div>
       <div class="product-categories">
-        <div class="product-categories__head">
-          КАТЕГОРИИ
-        </div>
-        <ul class="product-categories__list">
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Новые блюда
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Комплекты по специальной цене
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Блюда WOK
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Пасты
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Салаты
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Десерты
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Закуски
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Акции
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Напитки
-            </a>
-            <button class="product-categories__btn" type="button">+</button>
-          </li>
-        </ul>
-      </div>
+  <div class="product-categories__head">
+    КАТЕГОРИИ
+  </div>
+  <ul class="product-categories__list">
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="new-dishes.html">
+        Новые блюда
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="complects.html">
+        Комплекты по специальной цене
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link " href="#">
+        Блюда WOK
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="pasta.html">
+        Пасты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="salads.html">
+        Салаты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="desserts.html">
+        Десерты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="snacks.html">
+        Закуски
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="sales.html">
+        Акции
+      </a>
+    </li>
+    <li class="product-categories__item product-categories__item--flex">
+      <a class="product-categories__link "
+        href="drinks.html">
+        Напитки
+      </a>
+      <button class="product-categories__btn" type="button"></button>
+    </li>
+    <li class="product-categories__item product-categories__item--alcohol">
+      <a class="product-categories__link "
+        href="alcohol.html">
+        Алкогольные напитки
+      </a>
+    </li>
+  </ul>
+</div>
     </div>
   </div>
 </section>
-    <section class="novelties">
+      <section class="novelties">
   <div class="container">
     <h2 class="section-title">
       НОВЫЕ БЛЮДА
@@ -1007,65 +1021,65 @@
     </div>
   </div>
 </section>
-    <section class="our-menu">
+      <section class="our-menu" id="our-menu">
   <div class="container">
     <h2 class="section-title">
       НАШЕ МЕНЮ
     </h2>
     <ul class="our-menu__list">
       <li class="our-menu__item">
-        <a class="our-menu__img-link" href="#">
+        <a class="our-menu__img-link" href="complects.html">
           <img class="our-menu__img" src="images/products/our-menu/1.jpg" alt="menu 1">
         </a>
-        <a class="our-menu__link" href="#">КОМПЛЕКТЫ ПО СПЕЦИАЛЬНОЙ ЦЕНЕ</a>
+        <a class="our-menu__link" href="complects.html">КОМПЛЕКТЫ ПО СПЕЦИАЛЬНОЙ ЦЕНЕ</a>
       </li>
       <li class="our-menu__item">
-        <a class="our-menu__img-link" href="#">
+        <a class="our-menu__img-link" href="wok.html">
           <img class="our-menu__img" src="images/products/our-menu/2.jpg" alt="menu 2">
         </a>
-        <a class="our-menu__link" href="#">БЛЮДА WOK</a>
+        <a class="our-menu__link" href="wok.html">БЛЮДА WOK</a>
       </li>
       <li class="our-menu__item">
-        <a class="our-menu__img-link" href="#">
+        <a class="our-menu__img-link" href="pasta.html">
           <img class="our-menu__img" src="images/products/our-menu/3.jpg" alt="menu 3">
         </a>
-        <a class="our-menu__link" href="#">ПАСТЫ</a>
+        <a class="our-menu__link" href="pasta.html">ПАСТЫ</a>
       </li>
       <li class="our-menu__item">
-        <a class="our-menu__img-link" href="#">
+        <a class="our-menu__img-link" href="salads.html">
           <img class="our-menu__img" src="images/products/our-menu/4.jpg" alt="menu 4">
         </a>
-        <a class="our-menu__link" href="#">САЛАТЫ</a>
+        <a class="our-menu__link" href="salads.html">САЛАТЫ</a>
       </li>
       <li class="our-menu__item">
-        <a class="our-menu__img-link" href="#">
+        <a class="our-menu__img-link" href="desserts.html">
           <img class="our-menu__img" src="images/products/our-menu/5.jpg" alt="menu 5">
         </a>
-        <a class="our-menu__link" href="#">ДЕСЕРТЫ</a>
+        <a class="our-menu__link" href="desserts.html">ДЕСЕРТЫ</a>
       </li>
       <li class="our-menu__item">
-        <a class="our-menu__img-link" href="#">
+        <a class="our-menu__img-link" href="snacks.html">
           <img class="our-menu__img" src="images/products/our-menu/6.jpg" alt="menu 6">
         </a>
-        <a class="our-menu__link" href="#">ЗАКУСКИ</a>
+        <a class="our-menu__link" href="snacks.html">ЗАКУСКИ</a>
       </li>
       <li class="our-menu__item">
-        <a class="our-menu__img-link" href="#">
+        <a class="our-menu__img-link" href="kids-menu.html">
           <img class="our-menu__img" src="images/products/our-menu/7.jpg" alt="menu 7">
         </a>
-        <a class="our-menu__link" href="#">ДЕТСКОЕ МЕНЮ</a>
+        <a class="our-menu__link" href="kids-menu.html">ДЕТСКОЕ МЕНЮ</a>
       </li>
       <li class="our-menu__item">
-        <a class="our-menu__img-link" href="#">
+        <a class="our-menu__img-link" href="drinks.html">
           <img class="our-menu__img" src="images/products/our-menu/8.jpg" alt="menu 8">
         </a>
-        <a class="our-menu__link" href="#">НАПИТКИ</a>
+        <a class="our-menu__link" href="drinks.html">НАПИТКИ</a>
       </li>
     </ul>
 
   </div>
 </section>
-    <section class="promotions">
+      <section class="promotions">
   <div class="container">
     <nav class="promotions__nav product-nav">
       <ul class="promotions__tabs product-nav__tabs">
@@ -1192,7 +1206,7 @@
 
   </div>
 </section>
-</main>
+  </main>
 <footer class="footer">
   <div class="container">
     <div class="footer__top">
@@ -1274,9 +1288,9 @@
   </div>
 </footer>
 
+</div>
 <script src="../js/libs.min.js"></script>
 <script src="../js/main.js"></script>
-</div>
 
 </body>
 

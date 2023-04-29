@@ -1,0 +1,50 @@
+.contacts {
+  color: $c-black;
+  font-family: 'Open Sans', sans-serif;
+
+  &__inner {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 105px repeat(3, 1fr);
+    gap: 66px;
+  }
+
+  &__name {
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 196px;
+  }
+
+  &__number {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  &__time-title {
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+
+  &__days {
+    font-weight: 400;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 0;
+  }
+}

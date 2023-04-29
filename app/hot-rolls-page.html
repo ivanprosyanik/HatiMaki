@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HatiMaki - Sushi Bar | Запеченные роллы</title>
+</head>
+<body>
+  <div class="wrapper">
+
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.svg" alt="Логотип">
+      </a>
+      <div class="header-content">
+        <div class="header-top">
+          <ul class="header-top__menu">
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--home" href="index.html">Главная</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--heart" href="wish-list-page.html">Список желаний</a>
+            </li>
+            <li class="header-top__item header-top__item--dropdown">
+              <a class="header-top__link header-top__link--select icon icon--user" href="log-in.html">Войти</a>
+              <a class="header-top__link header-top__link--dropdown-content icon icon--register" href="register.html">Регистрация</a>
+            </li>
+
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--question" href="#">Задать вопрос</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--message" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="header-top__cart">
+            <p>Товаров <span>0</span></p>
+            <a class="header-top__cart-link icon icon--cart" href="#">
+              <span>0.00€</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-middle">
+          <div class="header-middle__text">
+            СЛУЖБА ДОСТАВКИ: 25130103
+          </div>
+          <form class="header-middle__search" action="#">
+            <label class="header-middle__label sr-only" for="search">Искать блюдо</label>
+            <input class="header-middle__input" type="text" name="search" id="search"
+              placeholder="Искать блюдо"></input>
+            <button class="header-middle__btn icon icon--search" type="button"></button>
+          </form>
+        </div>
+        <div class="header-bottom">
+          <ul class="header-bottom__menu menu">
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="index.html#our-menu">Меню ресторана</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="sales.html">Акции и новинки</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="wok.html">Блюда WOK</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="business.html">БИЗНЕС ЛАНЧ</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="delivery.html">ДОСТАВКА</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="about.html">О НАС</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <h1 class="sr-only">Запеченные роллы, в ресторане Hatimaki!!</h1>
+  <section class="sashimi">
+    <div class="container">
+      <div class="section-inner sashimi__inner">
+        <div class="product-categories">
+  <div class="product-categories__head">
+    КАТЕГОРИИ
+  </div>
+  <ul class="product-categories__list">
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="new-dishes.html">
+        Новые блюда
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="complects.html">
+        Комплекты по специальной цене
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link " href="#">
+        Блюда WOK
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="pasta.html">
+        Пасты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="salads.html">
+        Салаты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="desserts.html">
+        Десерты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="snacks.html">
+        Закуски
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="sales.html">
+        Акции
+      </a>
+    </li>
+    <li class="product-categories__item product-categories__item--flex">
+      <a class="product-categories__link "
+        href="drinks.html">
+        Напитки
+      </a>
+      <button class="product-categories__btn" type="button"></button>
+    </li>
+    <li class="product-categories__item product-categories__item--alcohol">
+      <a class="product-categories__link "
+        href="alcohol.html">
+        Алкогольные напитки
+      </a>
+    </li>
+  </ul>
+</div>
+        <div class="categories-content">
+          <h2 class="simple-title sashimi__simple-title">Запеченные роллы</h2>
+
+          <ul class="categories__list sashimi__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/1.jpg" alt="rolls 1">
+                </a>
+                <p class="product-card__name">Califonia fry maki (8 шт.)</p>
+                <span class="product-card__price">11.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/2.jpg" alt="rolls 2">
+                </a>
+                <p class="product-card__name">Italian tempura maki (8 шт.)</p>
+                <span class="product-card__price">8.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/3.jpg" alt="rolls 3">
+                </a>
+                <p class="product-card__name">Royal Hot maki (8 шт.)</p>
+                <span class="product-card__price">12.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/4.jpg" alt="rolls 4">
+                </a>
+                <p class="product-card__name">Toni maki (8 шт.)</p>
+                <span class="product-card__price">8.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/5.jpg" alt="rolls 5">
+                </a>
+                <p class="product-card__name">Unagi tempura maki (8 шт.)</p>
+                <span class="product-card__price">12.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/6.jpg" alt="rolls 6">
+                </a>
+                <p class="product-card__name">Yasai Hot maki (8 шт.)</p>
+                <span class="product-card__price">12.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/7.jpg" alt="rolls 7">
+                </a>
+                <p class="product-card__name">California Hot maki (8 шт.)</p>
+                <span class="product-card__price">12.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/8.jpg" alt="rolls 8">
+                </a>
+                <p class="product-card__name">Chicken Tempura maki (8 шт.)</p>
+                <span class="product-card__price">8.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/9.jpg" alt="rolls 9">
+                </a>
+                <p class="product-card__name">Salmon Teriyaki maki (8 шт.)</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/10.jpg" alt="rolls 10">
+                </a>
+                <p class="product-card__name">Surimi Hot maki (8 шт.)</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/11.jpg" alt="rolls 11">
+                </a>
+                <p class="product-card__name">Takeshi maki (8 шт.)</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/12.jpg" alt="rolls 12">
+                </a>
+                <p class="product-card__name">Tomado maki (8 шт.)</p>
+                <span class="product-card__price">8.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/13.jpg" alt="rolls 13">
+                </a>
+                <p class="product-card__name">Yakuza Hot maki (8 шт.)</p>
+                <span class="product-card__price">8.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/hotRolls/14.jpg" alt="rolls 14">
+                </a>
+                <p class="product-card__name">Yakitoriya Hot maki (8 шт.)</p>
+                <span class="product-card__price">8.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <p class="footer__text">
+        Оставайся в курсе наших новостей и акций, оформив подписку на нашу рассылку.
+      </p>
+      <form class="footer__form" action="#">
+        <label class="sr-only" for="email">Оставьте ваш email для рассылки</label>
+        <input type="text" class="footer__field" name="email" id="email" placeholder="Ваш Email...">
+        <button class="footer__btn" type="submit">ПОДПИСАТЬСЯ</button>
+      </form>
+    </div>
+    <div class="footer__content">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__item-name">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+          <ul class="footer__item-list">
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--location" href="#">Ресторона “Hatimaki”, Пушкинская улица</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--phone" href="tel:37127289851">371 27289851</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--location" href="#">Ресторона “Hatimaki”, улица Радуга</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--phone" href="#">666 89 103</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">ИНФОРМАЦИЯ</h3>
+          <ul class="footer__item-list">
+            <li class="footer__item-item">
+              Время работы
+            </li>
+            <li class="footer__item-item footer__item-item--time">Пн - Чт: 11:00 - 23:00</li>
+            <li class="footer__item-item footer__item-item--time">Пт - Сб: 11:00 - 01:00</li>
+            <li class="footer__item-item footer__item-item--time">Вс: 11:00 - 23:00</li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">ИНФОРМАЦИЯ ДЛЯ ПОКУПАТЕЛЕЙ</h3>
+          <ul class="foter__item-list">
+            <li class="footer__item-item">
+              Понравившиеся товары <span>(0)</span>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">НОВИНКИ</h3>
+          <ul class="novelties-sidebar__list">
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Hot Seabass maki и Chiс...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Hot Seabass maki и Bent...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Big tuna maki и Cezar ma...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="../js/libs.min.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>

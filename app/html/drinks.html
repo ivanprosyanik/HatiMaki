@@ -1,0 +1,119 @@
+@include('global/_head.html', {
+pageName: 'Напитки'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Напитки, в ресторане Hatimaki!!</h1>
+  <section class="drinks">
+    <div class="container">
+      <div class="section-inner drinks__inner">
+        @include('parts/_products-categories.html', {
+        "page": "drinks",
+        })
+        <div class="categories-content">
+          <h2 class="simple-title drinks__simple-title">Напитки</h2>
+
+          <a class="alcohol-link" href="alcohol.html">
+            <img class="alcohol-link__img" src="images/alcohol-img.png" alt="alcohol">
+            АЛКОГОЛЬНЫЕ НАПИТКИ
+          </a>
+
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/drinks/1.jpg" alt="drinks 1">
+                </a>
+                <p class="product-card__name">7up (0,33 l)</p>
+                <span class="product-card__price">2.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/drinks/2.jpg" alt="drinks 2">
+                </a>
+                <p class="product-card__name">Mirinda (0,33 l)</p>
+                <span class="product-card__price">2.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/drinks/3.jpg" alt="drinks 3">
+                </a>
+                <p class="product-card__name">Pepsi (0,33 l)</p>
+                <span class="product-card__price">2.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/drinks/4.jpg" alt="drinks 4">
+                </a>
+                <p class="product-card__name">Pepsi Max (0,33 l)</p>
+                <span class="product-card__price">2.00€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/drinks/5.jpg" alt="drinks 5">
+                </a>
+                <p class="product-card__name">Капучино</p>
+                <span class="product-card__price">3.10€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/drinks/5.jpg" alt="drinks 6">
+                </a>
+                <p class="product-card__name">Кофе</p>
+                <span class="product-card__price">2.90€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/drinks/6.jpg" alt="drinks 7">
+                </a>
+                <p class="product-card__name">Кофе Латте</p>
+                <span class="product-card__price">3.90€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/drinks/7.jpg" alt="drinks 7">
+                </a>
+                <p class="product-card__name">Свежевыжатый сок (0,2 l)</p>
+                <span class="product-card__price">3.90€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

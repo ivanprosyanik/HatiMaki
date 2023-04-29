@@ -1,0 +1,51 @@
+@include('global/_head.html', {
+pageName: 'Страница входа'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Войти на сайт ресторана Hati Maki</h1>
+  <section class="log-in">
+    <div class="container">
+      <div class="section-inner">
+        <div class="log-in-box log-in-box--register">
+          <span class="log-in-box__span"></span>
+          <h2 class="log-in-box__name">Регистрация</h2>
+          <p class="log-in-box__text">
+            Создание учетной записи поможет покупать быстрее. Вы сможете контролировать состояние заказа, а также
+            просматривать
+            заказы сделанные ранее.
+          </p>
+          <div class="log-in-box__bottom">
+            <a class="log-in-box__link" href="register.html">ПРОДОЛЖИТЬ</a>
+          </div>
+        </div>
+        <div class="log-in-box">
+          <span class="log-in-box__span"></span>
+          <h2 class="log-in-box__name">Войти в Личный кабинет</h2>
+          <form class="log-in__form" action="#">
+            <div class="log-in__form-group">
+              <label class="log-in__label" for="email">
+                E-Mail
+              </label>
+              <input class="log-in__field" type="email" name="email" id="email" placeholder="E-Mail">
+            </div>
+            <div class="log-in__form-group">
+              <label class="log-in__label" for="password">
+                Пароль
+              </label>
+              <input class="log-in__field" type="password" name="password" id="password" placeholder="Пароль">
+            </div>
+            <a class="log-in__form-link" href="#">Забыли пароль?</a>
+            <div class="log-in-box__bottom">
+              <button class="log-in__btn log-in-box__link" type="submit">Войти</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@include('global/_footer.html')

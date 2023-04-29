@@ -23,7 +23,7 @@
               <a class="product-nav__name" href="#complekts">СУШИ КОМПЛЕКТЫ</a>
             </li>
             <li class="product-nav__item">
-              <a class="product-nav__name" href="#">ВСЕ СУШИ</a>
+              <a class="product-nav__name" href="all-sushi.html">ВСЕ СУШИ</a>
             </li>
           </ul>
         </nav>
@@ -625,7 +625,7 @@
                   </article>
                 </li>
 
-                
+
               </ul>
               <div class="product-slider__dots"></div>
             </div>
@@ -633,59 +633,7 @@
 
         </ul>
       </div>
-      <div class="product-categories">
-        <div class="product-categories__head">
-          КАТЕГОРИИ
-        </div>
-        <ul class="product-categories__list">
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Новые блюда
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Комплекты по специальной цене
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Блюда WOK
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Пасты
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Салаты
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Десерты
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Закуски
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Акции
-            </a>
-          </li>
-          <li class="product-categories__item">
-            <a class="product-categories__link" href="#">
-              Напитки
-            </a>
-            <button class="product-categories__btn" type="button">+</button>
-          </li>
-        </ul>
-      </div>
+      @include('_products-categories.html')
     </div>
   </div>
 </section>

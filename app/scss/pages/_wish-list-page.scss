@@ -1,0 +1,34 @@
+.wish-list {
+  margin-bottom: 30px;
+  &__text {
+    color: $c-black;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 28px;
+    background-color: #f6f6f6;
+  }
+
+  &__btn {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 8px 9px;
+    background-color: $accent;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: $c-white;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: $c-white;
+      color: $accent;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@include('global/_head.html', {
+pageName: 'О нас'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Про ресторан Hati Maki</h1>
+  <section class="about">
+    <div class="container">
+      <div class="section-inner">
+        <div class="about__container">
+          <h2 class="simple-title about__title">О нас</h2>
+          <div class="about__text">
+            <p>
+              <span>Hatimaki</span> – это рестораны современной Азиатской кухни для ежедневных встреч и свиданий,
+              празднований, отдыха и
+              подзарядки
+              энергией. Спокойное и приятное место со стильным и ненавязчивым интерьером, где можно пообедать или
+              поужинать
+              с
+              коллегами, друзьями и семьей.
+              Место, где перевести дыхание от ежедневной суеты.
+            </p>
+          </div>
+          <div class="about__photos about__photos--interior">
+            <img class="about__img" src="images/about/1.jpg" alt="">
+            <img class="about__img" src="images/about/2.jpg" alt="">
+          </div>
+          <div class="about__text about__text--menu">
+            <p>
+              В нашем меню Вы найдете такие хиты традиционной азиатской кухни, как суши, суп Том Ям, суп Рамен, блюда WOK,
+              а
+              для
+              гостей, не являющихся поклонниками восточной кухни, мы предлагаем более традиционные блюда европейской кухни
+              –
+              салат
+              Цезарь, Тартар из лосося, томатный суп и чизкейк.
+            </p>
+            <p>
+              Наша команда – это наша главная гордость! За плечами наших поваров богатый опыт работы в крупнейших
+              ресторанах
+              Риги и
+              зарубежья. Мы придерживаемся высоких стандартов качества в приготовлении блюд, любим свое дело и своих
+              гостей.
+              Наша
+              главная цель – довольный клиент!
+            </p>
+          </div>
+          <div class="about__photos about__photos--people">
+            <img class="about__img" src="images/about/3.jpg" alt="">
+            <img class="about__img" src="images/about/4.jpg" alt="">
+          </div>
+          <div class="about__text">
+            <p>
+              Наши гости являются нашей главной ценность! Это люди, которые стремятся к высочайшему качеству по приемлемым
+              ценам,
+              воспринимают еду как часть ежедневного приключения и открыты для новых идей и вкусов. Поэтому в своей работе
+              мы
+              стараемся фокусироваться именно на этих принципах.
+  
+            </p>
+          </div>
+          <div class="about__photos about__photos--center">
+            <img class="about__img" src="images/about/5.jpg" alt="">
+            <img class="about__img" src="images/about/6.jpg" alt="">
+          </div>
+          <div class="about__text">
+            <p>
+              Каждый день в наших ресторанах действуют специальные предложения, а по рабочим дням мы предлагаем
+              <a class="about__link" href="business.html">Бизнес обеды.</a>
+            </p>
+          </div>
+        </div>
+        @include('parts/_products-categories.html')
+
+      </div>
+
+
+    </div>
+  </section>
+</main>
+
+@include('global/_footer.html')

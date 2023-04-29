@@ -1,0 +1,68 @@
+@include('global/_head.html', {
+pageName: 'Сашими'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Сашими, в ресторане Hatimaki!!</h1>
+  <section class="sashimi">
+    <div class="container">
+      <div class="section-inner sashimi__inner">
+        @include('parts/_products-categories.html')
+        <div class="categories-content">
+          <h2 class="simple-title sashimi__simple-title">Сашими</h2>
+
+          <ul class="categories__list sashimi__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/sashimi/1.jpg" alt="сашими 1">
+                </a>
+                <p class="product-card__name">Unagi Sashimi</p>
+                <span class="product-card__price">9.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/sashimi/2.jpg" alt="сашими 2">
+                </a>
+                <p class="product-card__name">Sake Sashimi</p>
+                <span class="product-card__price">9.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/sashimi/3.jpg" alt="cашими 3">
+                </a>
+                <p class="product-card__name">Maguro Sashimi</p>
+                <span class="product-card__price">7.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/sashimi/4.jpg" alt="сашими 4">
+                </a>
+                <p class="product-card__name">Ebi Sashimi</p>
+                <span class="product-card__price">7.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

@@ -1,0 +1,24 @@
+.delivery {
+  margin-bottom: 36px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    color: $c-black;
+    max-width: 800px;
+  }
+
+  &__item {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    span {
+      font-weight: 650;
+    }
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

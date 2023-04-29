@@ -1,0 +1,61 @@
+@include('global/_head.html', {
+pageName: 'Страница регистрации'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Зарегистрироваться на сайте ресторана Hati Maki</h1>
+  <section class="register">
+    <div class="container">
+      <h2 class="simple-title register__title">Быстрая регистрация</h2>
+      <p class="register__text">Если Вы уже зарегистрированы, перейдите на страницу <a href="log-in.html"
+          class="register__link">входа в систему.</a></p>
+      <form class="register__form" action="#">
+        <div class="register__form-group">
+          <label class="register__label" for="email">
+            <span>*</span> Email
+          </label>
+          <input class="register__field" name="email" id="email" type="email"
+            placeholder="Укажите адрес вашей электронной почты" required>
+        </div>
+        <div class="register__form-group">
+          <label class="register__label" for="password">
+            <span>*</span> Пароль
+          </label>
+          <input class="register__field" name="password" id="password" type="password" required>
+        </div>
+        <div class="register__form-group">
+          <label class="register__label" for="password[retry]">
+            <span>*</span> Подтвердите пароль
+          </label>
+          <input class="register__field" name="password[retry]" id="password[retry]" type="password" required>
+        </div>
+        <div class="register__form-group">
+          <label class="register__label" for="name">
+            <span>*</span> Имя
+          </label>
+          <input class="register__field" name="name" id="name" type="name" required placeholder="Укажите имя">
+        </div>
+        <div class="register__form-group">
+          <label class="register__label" for="surname">
+            <span>*</span> Фамилия
+          </label>
+          <input class="register__field" name="surname" id="surname" type="surname" required
+            placeholder="Укажите фамилию">
+        </div>
+        <div class="register__form-group">
+          <label class="register__label" for="phone">
+            <span>*</span> Телефон
+          </label>
+          <input class="register__field" name="phone" id="phone" type="phone" required
+            placeholder="Укажите доступный номер телефона">
+        </div>
+        <div class="register__form-bottom">
+          <button class="register__form-btn log-in-box__link">ПРОДОЛЖИТЬ</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+@include('global/_footer.html')

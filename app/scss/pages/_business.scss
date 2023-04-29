@@ -1,0 +1,38 @@
+.business {
+  color: $c-black;
+  margin-bottom: 50px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    gap: 50px 19px;
+  }
+
+  &__card {
+
+    &-title {
+      font-weight: 400;
+      font-size: 19px;
+      margin-bottom: 15px;
+      padding-left: 15px;
+    }
+
+    &-descr {
+      padding-left: 15px;
+      max-width: 361px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  &__head {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 245px;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+}

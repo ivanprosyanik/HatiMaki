@@ -1,0 +1,69 @@
+@include('global/_head.html', {
+pageName: 'Десерты'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Десерты, в ресторане Hatimaki!!</h1>
+  <section class="desserts">
+    <div class="container">
+      <div class="section-inner desserts__inner">
+        @include('parts/_products-categories.html', {
+        "page": "desserts",
+        })
+        <div class="categories-content">
+          <h2 class="simple-title desserts__simple-title">Десерты</h2>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/desserts/1.jpg" alt="desserts 1">
+                </a>
+                <p class="product-card__name">Жареное мороженое</p>
+                <span class="product-card__price">5.80€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/desserts/2.jpg" alt="desserts 2">
+                </a>
+                <p class="product-card__name">Клубничные суши</p>
+                <span class="product-card__price">5.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/desserts/3.jpg" alt="desserts 3">
+                </a>
+                <p class="product-card__name">Манго кокосовый чизкейк</p>
+                <span class="product-card__price">5.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="product-card">
+                <a class="product-card__link" href="#">
+                  <img class="product-card__img" src="images/products/categories/desserts/4.jpg" alt="desserts 4">
+                </a>
+                <p class="product-card__name">Тирамису</p>
+                <span class="product-card__price">5.50€</span>
+                <button class="product-card__btn icon icon--cart">КУПИТЬ</button>
+                <a class="product-card__text icon icon--heart" href="#">В список желаний</a>
+              </article>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+@include('global/_footer.html')

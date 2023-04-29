@@ -1,0 +1,41 @@
+@include('global/_head.html', {
+pageName: 'Страница доставки'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Страница доставки ресторана Hati Maki</h1>
+  <section class="delivery">
+    <div class="container">
+      <h2 class="simple-title">ДОСТАВКА</h2>
+      <div class="delivery__inner">
+        <ul class="delivery__list">
+          <li class="delivery__item">
+            <span>Ķekava, Ķekavas novads - </span> 3.50 EUR (Бесплатная доставка при заказе от 15 евро)
+          </li>
+          <li class="delivery__item">
+            <span>Baloži, Valdlauči, Rāmava –</span> 3.50 EUR (Бесплатная доставка при заказе от 30 евро)
+          </li>
+          <li class="delivery__item">
+            <span>Ziepniekkalns –</span> 4.50 EUR (Free shipping for orders over 45 евро)
+          </li>
+          <li class="delivery__item">
+            <span>Salaspils, Baldone, Daugmale –</span> 7 EUR (Бесплатная доставка при заказе от 45 евро)
+          </li>
+          <li class="delivery__item">
+            <span>Olaine un Olaines pagasts –</span> 7 EUR (Бесплатная доставка при заказе от 55 евро)
+          </li>
+          <li class="delivery__item">
+            <span>Iecava, Dzērumi –</span> 7 EUR (Бесплатная доставка при заказе от 55 евро)
+          </li>
+          <li class="delivery__item">
+            <span>Mārupe, Jaunmārupe –</span> 7 EUR (Бесплатная доставка при заказе от 55 евро)
+          </li>
+        </ul>
+        @include('parts/_products-categories.html')
+      </div>
+    </div>
+  </section>
+</main>
+
+@include('global/_footer.html')

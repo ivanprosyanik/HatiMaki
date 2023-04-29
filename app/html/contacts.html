@@ -1,0 +1,50 @@
+@include('global/_head.html', {
+pageName: 'Страница контактов'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Страница контактов ресторана Hati Maki</h1>
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <ul class="contacts__list">
+          <h2 class="simple-title">Контакты</h2>
+          <li class="contacts__item">
+            <address class="contacts__addres">
+              <p class="contacts__name">Ресторона “Hatimaki”, Пушкинская улица</p>
+              <a class="contacts__number" href="tel:37127289851">371 27289851</a>
+              <h3 class="contacts__time-title">Время работы</h3>
+              <p class="contacts__days">Пн - Чт: <time>11:00</time>-<time>23:00</time></p>
+              <p class="contacts__days">Пт - Сб: <time>11:00</time>-<time>01:00</time></p>
+              <p class="contacts__days">Вс:<time>11:00</time>-<time>23:00</time></p>
+            </address>
+          </li>
+          <li class="contacts__item">
+            <address class="contacts__addres">
+              <p class="contacts__name">Ресторона “Hatimaki”, улица Радуга</p>
+              <a class="contacts__number" href="tel:66689103">666 89 103</a>
+              <h3 class="contacts__time-title">Время работы</h3>
+              <p class="contacts__days">Пн - Чт: <time>11:00</time>-<time>23:00</time></p>
+              <p class="contacts__days">Пт - Сб: <time>11:00</time>-<time>01:00</time></p>
+              <p class="contacts__days">Вс:<time>11:00</time>-<time>23:00</time></p>
+            </address>
+          </li>
+          <li class="contacts__item">
+            <h2 class="simple-title contacts__item-title">СЛУЖБА ДОСТАВКИ</h2>
+            <address class="contacts__addres">
+              <a class="contacts__number" href="tel:28387660">28387660</a>
+              <h3 class="contacts__time-title">Время работы</h3>
+              <p class="contacts__days">Пн.- Ср.:<time>10:00</time>-<time>21:00</time>(заказы до 21:00)</p>
+              <p class="contacts__days">Чт.-Пт.:<time>10:00</time>-<time>22:00</time>(заказы до 21:30)</p>
+              <p class="contacts__days">Сб.:<time>12:00</time>-<time>22:00</time>(заказы до 21:30)</p>
+              <p class="contacts__days">Вс.:<time>12:00</time>-<time>20:00</time>(заказы до 20:00)</p>
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+@include('global/_footer.html')
