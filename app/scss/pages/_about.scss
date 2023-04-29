@@ -1,0 +1,52 @@
+.about {
+  margin-bottom: 100px;
+  &__container {
+    max-width: 1030px;
+  }
+
+  &__title {
+    margin-bottom: 73px;
+  }
+
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    color: $c-black;
+    font-weight: 400;
+    line-height: 1.4;
+
+    &:last-child {
+      max-width: 1030px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    &--menu {
+      max-width: 1025px;
+
+      p:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__photos {
+    display: flex;
+    gap: 20px;
+
+    &--interior {
+      padding: 40px 0 60px;
+    }
+
+    &--people {
+      padding: 60px 0 50px;
+      gap: 40px;
+    }
+
+    &--center {
+      padding: 34px 0 100px;
+      justify-content: center;
+    }
+  }
+}
