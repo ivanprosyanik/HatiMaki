@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HatiMaki - Sushi Bar | Страница входа</title>
+</head>
+<body>
+  <div class="wrapper">
+
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.svg" alt="Логотип">
+      </a>
+      <div class="header-content">
+        <div class="header-top">
+          <ul class="header-top__menu">
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--home" href="index.html">Главная</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--heart" href="wish-list-page.html">Список желаний</a>
+            </li>
+            <li class="header-top__item header-top__item--dropdown">
+              <a class="header-top__link header-top__link--select icon icon--user" href="log-in.html">Войти</a>
+              <a class="header-top__link header-top__link--dropdown-content icon icon--register" href="register.html">Регистрация</a>
+            </li>
+
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--question" href="#">Задать вопрос</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--message" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="header-top__cart">
+            <p>Товаров <span>0</span></p>
+            <a class="header-top__cart-link icon icon--cart" href="#">
+              <span>0.00€</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-middle">
+          <div class="header-middle__text">
+            СЛУЖБА ДОСТАВКИ: 25130103
+          </div>
+          <form class="header-middle__search" action="#">
+            <label class="header-middle__label sr-only" for="search">Искать блюдо</label>
+            <input class="header-middle__input" type="text" name="search" id="search"
+              placeholder="Искать блюдо"></input>
+            <button class="header-middle__btn icon icon--search" type="button"></button>
+          </form>
+        </div>
+        <div class="header-bottom">
+          <ul class="header-bottom__menu menu">
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="index.html#our-menu">Меню ресторана</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="sales.html">Акции и новинки</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="wok.html">Блюда WOK</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="business.html">БИЗНЕС ЛАНЧ</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="delivery.html">ДОСТАВКА</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="about.html">О НАС</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <h1 class="sr-only">Войти на сайт ресторана Hati Maki</h1>
+  <section class="log-in">
+    <div class="container">
+      <div class="section-inner">
+        <div class="log-in-box log-in-box--register">
+          <span class="log-in-box__span"></span>
+          <h2 class="log-in-box__name">Регистрация</h2>
+          <p class="log-in-box__text">
+            Создание учетной записи поможет покупать быстрее. Вы сможете контролировать состояние заказа, а также
+            просматривать
+            заказы сделанные ранее.
+          </p>
+          <div class="log-in-box__bottom">
+            <a class="log-in-box__link" href="register.html">ПРОДОЛЖИТЬ</a>
+          </div>
+        </div>
+        <div class="log-in-box">
+          <span class="log-in-box__span"></span>
+          <h2 class="log-in-box__name">Войти в Личный кабинет</h2>
+          <form class="log-in__form" action="#">
+            <div class="log-in__form-group">
+              <label class="log-in__label" for="email">
+                E-Mail
+              </label>
+              <input class="log-in__field" type="email" name="email" id="email" placeholder="E-Mail">
+            </div>
+            <div class="log-in__form-group">
+              <label class="log-in__label" for="password">
+                Пароль
+              </label>
+              <input class="log-in__field" type="password" name="password" id="password" placeholder="Пароль">
+            </div>
+            <a class="log-in__form-link" href="#">Забыли пароль?</a>
+            <div class="log-in-box__bottom">
+              <button class="log-in__btn log-in-box__link" type="submit">Войти</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <p class="footer__text">
+        Оставайся в курсе наших новостей и акций, оформив подписку на нашу рассылку.
+      </p>
+      <form class="footer__form" action="#">
+        <label class="sr-only" for="email">Оставьте ваш email для рассылки</label>
+        <input type="text" class="footer__field" name="email" id="email" placeholder="Ваш Email...">
+        <button class="footer__btn" type="submit">ПОДПИСАТЬСЯ</button>
+      </form>
+    </div>
+    <div class="footer__content">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__item-name">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+          <ul class="footer__item-list">
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--location" href="#">Ресторона “Hatimaki”, Пушкинская улица</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--phone" href="tel:37127289851">371 27289851</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--location" href="#">Ресторона “Hatimaki”, улица Радуга</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--phone" href="#">666 89 103</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">ИНФОРМАЦИЯ</h3>
+          <ul class="footer__item-list">
+            <li class="footer__item-item">
+              Время работы
+            </li>
+            <li class="footer__item-item footer__item-item--time">Пн - Чт: 11:00 - 23:00</li>
+            <li class="footer__item-item footer__item-item--time">Пт - Сб: 11:00 - 01:00</li>
+            <li class="footer__item-item footer__item-item--time">Вс: 11:00 - 23:00</li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">ИНФОРМАЦИЯ ДЛЯ ПОКУПАТЕЛЕЙ</h3>
+          <ul class="foter__item-list">
+            <li class="footer__item-item">
+              Понравившиеся товары <span>(0)</span>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">НОВИНКИ</h3>
+          <ul class="novelties-sidebar__list">
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Hot Seabass maki и Chiс...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Hot Seabass maki и Bent...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Big tuna maki и Cezar ma...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="../js/libs.min.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>

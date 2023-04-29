@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HatiMaki - Sushi Bar | WOK</title>
+</head>
+<body>
+  <div class="wrapper">
+
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.svg" alt="Логотип">
+      </a>
+      <div class="header-content">
+        <div class="header-top">
+          <ul class="header-top__menu">
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--home" href="index.html">Главная</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--heart" href="wish-list-page.html">Список желаний</a>
+            </li>
+            <li class="header-top__item header-top__item--dropdown">
+              <a class="header-top__link header-top__link--select icon icon--user" href="log-in.html">Войти</a>
+              <a class="header-top__link header-top__link--dropdown-content icon icon--register" href="register.html">Регистрация</a>
+            </li>
+
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--question" href="#">Задать вопрос</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--message" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="header-top__cart">
+            <p>Товаров <span>0</span></p>
+            <a class="header-top__cart-link icon icon--cart" href="#">
+              <span>0.00€</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-middle">
+          <div class="header-middle__text">
+            СЛУЖБА ДОСТАВКИ: 25130103
+          </div>
+          <form class="header-middle__search" action="#">
+            <label class="header-middle__label sr-only" for="search">Искать блюдо</label>
+            <input class="header-middle__input" type="text" name="search" id="search"
+              placeholder="Искать блюдо"></input>
+            <button class="header-middle__btn icon icon--search" type="button"></button>
+          </form>
+        </div>
+        <div class="header-bottom">
+          <ul class="header-bottom__menu menu">
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="index.html#our-menu">Меню ресторана</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="sales.html">Акции и новинки</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="wok.html">Блюда WOK</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="business.html">БИЗНЕС ЛАНЧ</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="delivery.html">ДОСТАВКА</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="about.html">О НАС</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <h1 class="sr-only">Блюда WOK в ресторане Hati Maki</h1>
+  <section class="wok">
+    <div class="container">
+      <div class="section-inner wok__inner">
+        <div class="product-categories">
+  <div class="product-categories__head">
+    КАТЕГОРИИ
+  </div>
+  <ul class="product-categories__list">
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="new-dishes.html">
+        Новые блюда
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="complects.html">
+        Комплекты по специальной цене
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link " href="#">
+        Блюда WOK
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="pasta.html">
+        Пасты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="salads.html">
+        Салаты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="desserts.html">
+        Десерты
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="snacks.html">
+        Закуски
+      </a>
+    </li>
+    <li class="product-categories__item">
+      <a class="product-categories__link "
+        href="sales.html">
+        Акции
+      </a>
+    </li>
+    <li class="product-categories__item product-categories__item--flex">
+      <a class="product-categories__link "
+        href="drinks.html">
+        Напитки
+      </a>
+      <button class="product-categories__btn" type="button"></button>
+    </li>
+    <li class="product-categories__item product-categories__item--alcohol">
+      <a class="product-categories__link "
+        href="alcohol.html">
+        Алкогольные напитки
+      </a>
+    </li>
+  </ul>
+</div>
+
+        <div class="wok__content">
+          <h2 class="simple-title wok__title">БЛЮДА WOK</h2>
+          <div class="wok__text">
+            <p>
+              Собери сам свой WOK - выбирай основной компонент, лапшу/рис и соус.
+            </p>
+            <p class="accent">
+              Про составные части блюда и аллергены спрашивайте у оператора.
+            </p>
+          </div>
+          <div class="wok__category">
+            <h3 class="wok__category-title">
+              1. ВЫБЕРИТЕ ОСНОВНОЕ БЛЮДО
+            </h3>
+            <ul class="wok__list">
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/1.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Свинина</span>
+                    <span class="wok-card__price">5.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/2.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Курица</span>
+                    <span class="wok-card__price">5.10€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/3.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Тигровые креветки</span>
+                    <span class="wok-card__price">7.20€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/4.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Говядина</span>
+                    <span class="wok-card__price">7.20€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/5.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Утка</span>
+                    <span class="wok-card__price">7.10€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/6.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Овощи</span>
+                    <span class="wok-card__price">3.90€</span>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="wok__category">
+            <h3 class="wok__category-title">
+              2. ВЫБЕРИТЕ ГАРНИР
+            </h3>
+            <ul class="wok__list">
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/1.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Рис</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/2.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Лапша Удон</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/3.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Яичная лапша</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/4.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Рисовая Лапша</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/5.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Стеклянная лапша</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="wok__category">
+            <h3 class="wok__category-title">
+              3. ВЫБЕРИТЕ СОУС
+            </h3>
+            <ul class="wok__list">
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/sauce/1.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Устричный соус</span>
+                    <span class="wok-card__price">1.90€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/sauce/2.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Соус терияки</span>
+                    <span class="wok-card__price">1.90€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/sauce/3.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Сладкий чили соус</span>
+                    <span class="wok-card__price">1.90€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/sauce/4.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Чили соус</span>
+                    <span class="wok-card__price">1.90€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card wok-card--without">
+                    <img class="wok-card__img" src="images/wok/sauce/5.svg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Без соуса</span>
+                    <span class="wok-card__price">0.00€</span>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="wok__cart">
+            <h3 class="wok__category-title">
+              ПРЕДВАРИТЕЛЬНАЯ КОРЗИНА
+            </h3>
+
+            <div class="wok__cart-box">
+              <ul class="wok__cart-list">
+                <li class="wok__cart-item">
+                  <p class="wok__cart-text">Выберите основное блюдо</p>
+                </li>
+                <li class="wok__cart-item">
+                  <p class="wok__cart-text">Выберите гарнир</p>
+                </li>
+                <li class="wok__cart-item">
+                  <p class="wok__cart-text">Выберите соус</p>
+                </li>
+              </ul>
+              <div class="wok__cart-info">
+                <span class="wok__cart-price">0.00€</span>
+                <input class="wok__cart-field" type="number">
+                <a class="wok__cart-link icon icon--cart" href="#">КУПИТЬ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <p class="footer__text">
+        Оставайся в курсе наших новостей и акций, оформив подписку на нашу рассылку.
+      </p>
+      <form class="footer__form" action="#">
+        <label class="sr-only" for="email">Оставьте ваш email для рассылки</label>
+        <input type="text" class="footer__field" name="email" id="email" placeholder="Ваш Email...">
+        <button class="footer__btn" type="submit">ПОДПИСАТЬСЯ</button>
+      </form>
+    </div>
+    <div class="footer__content">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h3 class="footer__item-name">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+          <ul class="footer__item-list">
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--location" href="#">Ресторона “Hatimaki”, Пушкинская улица</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--phone" href="tel:37127289851">371 27289851</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--location" href="#">Ресторона “Hatimaki”, улица Радуга</a>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link icon icon--phone" href="#">666 89 103</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">ИНФОРМАЦИЯ</h3>
+          <ul class="footer__item-list">
+            <li class="footer__item-item">
+              Время работы
+            </li>
+            <li class="footer__item-item footer__item-item--time">Пн - Чт: 11:00 - 23:00</li>
+            <li class="footer__item-item footer__item-item--time">Пт - Сб: 11:00 - 01:00</li>
+            <li class="footer__item-item footer__item-item--time">Вс: 11:00 - 23:00</li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">ИНФОРМАЦИЯ ДЛЯ ПОКУПАТЕЛЕЙ</h3>
+          <ul class="foter__item-list">
+            <li class="footer__item-item">
+              Понравившиеся товары <span>(0)</span>
+            </li>
+            <li class="footer__item-item">
+              <a class="footer__item-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__item-name">НОВИНКИ</h3>
+          <ul class="novelties-sidebar__list">
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Hot Seabass maki и Chiс...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Hot Seabass maki и Bent...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+            <li class="novelties-sidebar__item">
+              <a class="novelties-sidebar__link" href="#">
+                Big tuna maki и Cezar ma...
+                <span class="novelties-sidebar__price">15.50€</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="../js/libs.min.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>
