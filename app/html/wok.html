@@ -1,0 +1,219 @@
+@include('global/_head.html', {
+pageName: 'WOK'
+})
+@include('global/_header.html')
+
+<main class="main">
+  <h1 class="sr-only">Блюда WOK в ресторане Hati Maki</h1>
+  <section class="wok">
+    <div class="container">
+      <div class="section-inner wok__inner">
+        @include('parts/_products-categories.html')
+
+        <div class="wok__content">
+          <h2 class="simple-title wok__title">БЛЮДА WOK</h2>
+          <div class="wok__text">
+            <p>
+              Собери сам свой WOK - выбирай основной компонент, лапшу/рис и соус.
+            </p>
+            <p class="accent">
+              Про составные части блюда и аллергены спрашивайте у оператора.
+            </p>
+          </div>
+          <div class="wok__category">
+            <h3 class="wok__category-title">
+              1. ВЫБЕРИТЕ ОСНОВНОЕ БЛЮДО
+            </h3>
+            <ul class="wok__list">
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/1.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Свинина</span>
+                    <span class="wok-card__price">5.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/2.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Курица</span>
+                    <span class="wok-card__price">5.10€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/3.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Тигровые креветки</span>
+                    <span class="wok-card__price">7.20€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/4.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Говядина</span>
+                    <span class="wok-card__price">7.20€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/5.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Утка</span>
+                    <span class="wok-card__price">7.10€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/basic/6.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Овощи</span>
+                    <span class="wok-card__price">3.90€</span>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="wok__category">
+            <h3 class="wok__category-title">
+              2. ВЫБЕРИТЕ ГАРНИР
+            </h3>
+            <ul class="wok__list">
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/1.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Рис</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/2.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Лапша Удон</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/3.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Яичная лапша</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/4.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Рисовая Лапша</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/garnish/5.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Стеклянная лапша</span>
+                    <span class="wok-card__price">2.50€</span>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="wok__category">
+            <h3 class="wok__category-title">
+              3. ВЫБЕРИТЕ СОУС
+            </h3>
+            <ul class="wok__list">
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/sauce/1.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Устричный соус</span>
+                    <span class="wok-card__price">1.90€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/sauce/2.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Соус терияки</span>
+                    <span class="wok-card__price">1.90€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/sauce/3.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Сладкий чили соус</span>
+                    <span class="wok-card__price">1.90€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card">
+                    <img class="wok-card__img" src="images/wok/sauce/4.jpg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Чили соус</span>
+                    <span class="wok-card__price">1.90€</span>
+                  </article>
+                </a>
+              </li>
+              <li class="wok__item">
+                <a class="wok__link" href="#">
+                  <article class="wok-card wok-card--without">
+                    <img class="wok-card__img" src="images/wok/sauce/5.svg" alt="Основное блюдо для">
+                    <span class="wok-card__name">Без соуса</span>
+                    <span class="wok-card__price">0.00€</span>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="wok__cart">
+            <h3 class="wok__category-title">
+              ПРЕДВАРИТЕЛЬНАЯ КОРЗИНА
+            </h3>
+
+            <div class="wok__cart-box">
+              <ul class="wok__cart-list">
+                <li class="wok__cart-item">
+                  <p class="wok__cart-text">Выберите основное блюдо</p>
+                </li>
+                <li class="wok__cart-item">
+                  <p class="wok__cart-text">Выберите гарнир</p>
+                </li>
+                <li class="wok__cart-item">
+                  <p class="wok__cart-text">Выберите соус</p>
+                </li>
+              </ul>
+              <div class="wok__cart-info">
+                <span class="wok__cart-price">0.00€</span>
+                <input class="wok__cart-field" type="number">
+                <a class="wok__cart-link icon icon--cart" href="#">КУПИТЬ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@include('global/_footer.html')
