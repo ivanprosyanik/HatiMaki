@@ -4,6 +4,16 @@
   align-items: center;
   background-color: #2c2525;
   margin-bottom: 22px;
+  transition: all .3s ease-in-out;
+
+  &.sticky {
+    position: sticky;  
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: all .3s ease-in-out;
+  }
 
   &__menu {
     @extend .header-bottom__menu;

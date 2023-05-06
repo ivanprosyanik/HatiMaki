@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  const questionBtn = document.getElementById('question');
+  const modal = document.querySelector('.modal');
+  const modalClose = document.querySelector('.modal__close-btn');
+  const body = document.querySelector('body');
+
+  questionBtn.addEventListener('click', () => {
+    modal.classList.add('active');
+    body.classList.add('lock');
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+    body.classList.remove('lock');
+
+  });
+
   const banners = new Swiper('.banners__slider', {
     slidesPerView: 1,
     loop: true,
@@ -76,4 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+  const globalNav = document.querySelector('.global-nav');
+  if (globalNav) {
+    window.onscroll = () => {
+      if (window.pageYOffset > 899) {
+        globalNav.classList.add("sticky");
+      } else {
+        globalNav.classList.remove("sticky");
+      }
+    };
+  }
 });

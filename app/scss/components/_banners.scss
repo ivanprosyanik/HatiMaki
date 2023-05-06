@@ -7,7 +7,8 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr 405px;
-    column-gap: 20px;
+    padding: 0 14px;
+    // column-gap: 20px;
   }
 
   &__slider {
@@ -15,6 +16,7 @@
     overflow: hidden;
     display: flex;
     position: relative;
+    max-width: 945px;
   }
 
   &__list {
@@ -43,7 +45,7 @@
     }
 
     &--next {
-      right: 25px;
+      right: 41px;
 
       &::before {
         max-width: 20px;
@@ -65,7 +67,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 20px;
+    bottom: 5px;
   }
 
   &__dot {
@@ -78,8 +80,8 @@
     border: none;
 
     &--active {
-      min-width: 21px;
-      height: 21px;
+      min-width: 15px;
+      height: 15px;
       background-color: #ff0000;
     }
   }
