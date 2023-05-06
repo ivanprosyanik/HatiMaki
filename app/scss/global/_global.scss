@@ -256,6 +256,10 @@ body {
     width: 70px;
     height: 70px;
 
+    @include r(1200) {
+      display: none;
+    }
+
     &::before {
       min-width: 64px;
       height: 64px;
