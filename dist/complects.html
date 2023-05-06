@@ -27,11 +27,12 @@
             </li>
             <li class="header-top__item header-top__item--dropdown">
               <a class="header-top__link header-top__link--select icon icon--user" href="log-in.html">Войти</a>
-              <a class="header-top__link header-top__link--dropdown-content icon icon--register" href="register.html">Регистрация</a>
+              <a class="header-top__link header-top__link--dropdown-content icon icon--register"
+                href="register.html">Регистрация</a>
             </li>
 
             <li class="header-top__item">
-              <a class="header-top__link icon icon--question" href="#">Задать вопрос</a>
+              <a class="header-top__link icon icon--question" id="question">Задать вопрос</a>
             </li>
             <li class="header-top__item">
               <a class="header-top__link icon icon--message" href="contacts.html">Контакты</a>
@@ -46,7 +47,7 @@
         </div>
         <div class="header-middle">
           <div class="header-middle__text">
-            СЛУЖБА ДОСТАВКИ: 25130103
+            СЛУЖБА ДОСТАВКИ: <span>25130103</span>
           </div>
           <form class="header-middle__search" action="#">
             <label class="header-middle__label sr-only" for="search">Искать блюдо</label>
@@ -78,17 +79,43 @@
           </ul>
         </div>
       </div>
-
     </nav>
   </div>
 </header>
+<div class="modal">
+  <button class="modal__close-btn icon icon--modal-close" type="button"></button>
+  <h2 class="modal__title">ЗАДАТЬ ВОПРОС</h2>
+  <form class="modal__form" action="#">
+    <div class="modal__content">
+      <label class="modal__label" for="modal[name]">
+        Ваше имя
+        <input type="text" class="modal__field" name="modal[name]">
+      </label>
+      <label class="modal__label" for="modal[mail]">
+        Ваш E-Mail
+        <input type="text" class="modal__field" name="modal[name]">
+      </label>
+      <label class="modal__label" for="modal[message]">
+        Ваш вопрос или сообщение
+        <textarea class="modal__textarea" name="modal[message]"></textarea>
+      </label>
+    </div>
+    <div class="modal__bottom">
+      <button class="modal__btn icon icon--message" type="submit">ОТПРАВИТЬ</button>
+    </div>
+  </form>
+</div>
+<div class="social">
+  <a class="social__link icon icon--instagram" href="https://www.instagram.com/siga.lita/" target="_blank"></a>
+  <a class="social__link icon icon--facebook" href="#"></a>
+</div>
 
 <main class="main">
   <h1 class="sr-only">Новые блюда в ресторане Hatimaki!!</h1>
   <section class="complects">
     <div class="container">
       <div class="section-inner complects__inner">
-        <div class="product-categories">
+        <!-- <div class="product-categories">
   <div class="product-categories__head">
     КАТЕГОРИИ
   </div>
@@ -154,7 +181,7 @@
       </a>
     </li>
   </ul>
-</div>
+</div> -->
         <div class="categories-content">
           <h2 class="simple-title complects__simple-title">КОМПЛЕКТЫ ПО СПЕЦИАЛЬНОЙ ЦЕНЕ</h2>
 
@@ -234,7 +261,7 @@
 
 
 </main>
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="footer__top">
       <p class="footer__text">
@@ -313,11 +340,11 @@
       </ul>
     </div>
   </div>
-</footer>
+</footer> -->
 
 </div>
-<script src="../js/libs.min.js"></script>
-<script src="../js/main.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
