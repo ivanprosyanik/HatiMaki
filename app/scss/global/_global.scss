@@ -118,8 +118,16 @@ body {
     }
   }
 
+  &--modal-close {
+    &::before {
+      mask-image: url(../images/sprite.svg#icon-modal-close);
+    }
+  }
+
   &--message {
     &::before {
+      min-width: 26px;
+      height: 26px;
       mask-image: url(../images/sprite.svg#icon-message);
     }
   }
@@ -175,6 +183,24 @@ body {
       mask-image: url(../images/sprite.svg#icon-phone);
     }
   }
+
+  &--instagram {
+    background-color: #d43377;
+
+    &::before {
+      mask-image: url(../images/sprite.svg#icon-instagram);
+      background-color: #fff;
+    }
+  }
+
+  &--facebook {
+    background-color: #3b5998;
+
+    &::before {
+      mask-image: url(../images/sprite.svg#icon-facebook);
+      background-color: #fff;
+    }
+  }
 }
 
 .alcohol-link {
@@ -199,5 +225,44 @@ body {
   &__img {
     margin-bottom: 9px;
     transition: opacity .2s ease-in-out;
+  }
+}
+
+.lock {
+  overflow: hidden;
+  position: relative;
+  transition: background-color .3s ease-in-out;
+
+  &::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 21;
+    background-color: rgba($c-white, .5);
+    transition: background-color .3s ease-in-out;
+  }
+}
+
+.social {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
+
+    &::before {
+      min-width: 64px;
+      height: 64px;
+    }
+
+    &:hover {
+      opacity: .9;
+    }
   }
 }
