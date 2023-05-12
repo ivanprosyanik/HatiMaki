@@ -5,24 +5,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalClose = document.querySelector('.modal__close-btn');
   const body = document.querySelector('body');
 
-  questionBtn.addEventListener('click', () => {
-    modal.classList.add('active');
-    body.classList.add('lock');
-  });
+  if (questionBtn) {
+    questionBtn.addEventListener('click', () => {
+      modal.classList.add('active');
+      body.classList.add('lock');
+    });
+  }
 
-  modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-    body.classList.remove('lock');
-
-  });
-
+  if (modalClose) {
+    modalClose.addEventListener('click', () => {
+      modal.classList.remove('active');
+      body.classList.remove('lock');
+    });
+  }
   const banners = new Swiper('.banners__slider', {
     slidesPerView: 1,
     loop: true,
     autoplay: {
-      delay: 3500,
+      delay: 4000,
       disableOnInteraction: false,
     },
+    effect: 'fade',
+    speed: 500,
     pagination: {
       el: ".banners__dots",
       bulletClass: "banners__dot",
@@ -86,11 +90,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const btnPlus = document.querySelector('.product-categories__btn');
   const alcoDrink = document.querySelector('.product-categories__item--alcohol');
-
-  btnPlus.addEventListener('click', () => {
-    btnPlus.classList.toggle('active');
-    alcoDrink.classList.toggle('active');
-  });
+  if (btnPlus) {
+    btnPlus.addEventListener('click', () => {
+      btnPlus.classList.toggle('active');
+      alcoDrink.classList.toggle('active');
+    });
+  }
 
 
   const globalNav = document.querySelector('.global-nav');
@@ -103,4 +108,45 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
   }
+
+  const burger = document.querySelector('.burger');
+  const headerBotMenu = document.querySelector('.header-bottom__mobile-menu');
+
+  burger.addEventListener('click', () => {
+    headerBotMenu.classList.toggle('show');
+    burger.classList.toggle('active');
+  });
+
+  const headerBottom = document.querySelector('.header-bottom__mobile');
+
+
+  if (headerBottom) {
+    window.onscroll = () => {
+      if (window.pageYOffset > 273) {
+        headerBottom.classList.add("sticky");
+      } else {
+        headerBottom.classList.remove("sticky");
+      }
+    };
+  }
+
+  const footerItem = document.querySelectorAll('.footer__item');
+
+
+  footerItem.forEach(el => {
+    el.addEventListener('click', (e) => {
+      const self = e.currentTarget;
+      const control = self.querySelector('.footer__item-name');
+      const content = self.querySelector('.footer__item-list');
+
+      self.classList.toggle('open');
+
+      if(self.classList.contains('open')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        content.style.maxHeight = null;
+      }
+    });
+  });
+
 });

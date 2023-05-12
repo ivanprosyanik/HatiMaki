@@ -26,6 +26,10 @@ body {
   max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @include r(375) {
+    padding: 0;
+  }
 }
 
 .sr-only {
@@ -39,6 +43,10 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.logo {
+  z-index: 999;
 }
 
 .section-inner {
@@ -268,5 +276,55 @@ body {
     &:hover {
       opacity: .9;
     }
+  }
+}
+
+.burger {
+  width: 25px;
+  height: 18px;
+  position: relative;
+  color: #ffffff;
+  cursor: pointer;
+
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    border-radius: 5px;
+  }
+
+  &__text {
+    display: block;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: calc(100% - 4px);
+  }
+
+  &--active &__line {
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
   }
 }

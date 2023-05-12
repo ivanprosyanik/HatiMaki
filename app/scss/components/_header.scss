@@ -4,6 +4,22 @@
   z-index: 10;
   margin-bottom: 63px;
 
+  @include r(1200) {
+    margin-bottom: 30px;
+  }
+
+  @include r(992) {
+    margin-bottom: 55px;
+  }
+
+  &-content {
+    @include r(992) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__nav {
     display: flex;
     gap: 10px;
@@ -27,6 +43,8 @@
     height: 70px;
     background-color: #312e2b;
   }
+
+
 }
 
 .header-top {
@@ -38,6 +56,7 @@
 
   @include r(1200) {
     gap: size(80, 0);
+    display: none;
   }
 
   &__menu {
@@ -119,6 +138,7 @@
       text-transform: uppercase;
       font-weight: 400;
       white-space: nowrap;
+      font-size: 16px;
     }
   }
 
@@ -136,6 +156,42 @@
   }
 }
 
+.header-top--mobile {
+  display: none;
+
+  @include r(1200) {
+    display: flex;
+    justify-content: center;
+    background-color: #2e2e2e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .header-top__item {
+    &:not(:first-child) {
+      border-left: 1px solid #fff;
+    }
+  }
+
+  .header-top__link {
+    padding: 12px 15px 8px 15px;
+
+    &::before {
+      min-width: 20px;
+      height: 20px;
+    }
+
+    &--select {
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+}
+
 
 .header-middle {
   display: flex;
@@ -148,6 +204,10 @@
     text-transform: uppercase;
     color: #ff0000;
 
+    @include r(1200) {
+      display: none;
+    }
+
     span {
       font-size: 24px;
     }
@@ -159,13 +219,19 @@
     background-color: #2c2525;
     padding: 14px 15px;
     min-width: 353px;
+
+    @include r(1200) {
+      width: 100%;
+      min-width: 100%;
+      flex-grow: 1;
+    }
   }
 
   &__input {
-    // width: 100%;
     background-color: transparent;
+    width: 100%;
+    padding-right: 15px;
 
-    // padding: 19px 13px;
     &::placeholder {
       color: $c-white;
       font-family: 'Open Sans', sans-serif;
@@ -178,24 +244,127 @@
 .header-bottom {
   background-color: $accent;
 
+  @include r(992) {
+    background-color: transparent;
+    z-index: 999;
+    display: none;
+  }
+
   &__menu {
     display: flex;
     justify-content: center;
+
+    @include r(992) {
+      flex-direction: column;
+      background-color: #312e2b;
+      transform: translateX(-110%);
+      position: relative;
+      z-index: -1;
+      transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+
+      &.show {
+        transform: translateX(0);
+        z-index: 999;
+      }
+    }
+  }
+
+  &__item {
+    @include r(992) {
+      &:not(:last-child) {
+        border-bottom: 1px solid $c-white;
+      }
+
+      &:first-child {
+        border-top: 1px solid $c-white;
+      }
+    }
   }
 
   &__link {
     color: $c-white;
-    font-size: 19px;
+    font-size: size(19, 15);
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px 20px;
+    padding: size(20, 17) size(20, 7);
+    white-space: nowrap;
     background-color: transparent;
     transition: color .3s ease-in-out, background-color .3s ease-in-out;
 
     &:hover {
       background-color: $c-white;
       color: $accent;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__cart {
+    gap: 12px;
+  }
+}
+
+.header-bottom__mobile {
+  display: none;
+
+  @include r(992) {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    right: 15px;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+
+    &.sticky {
+      transition: all .3s ease-in-out;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  @include r(375) {
+    left: 0;
+    right: 0;
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #312e2b;
+    transition: all .3s ease-in-out;
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: center;
+
+    @include r(992) {
+      flex-direction: column;
+      background-color: #312e2b;
+      transform: translateX(-110%);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 55px;
+      z-index: -1;
+      transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+
+      &.show {
+        transform: translateX(0);
+        // left: 0;
+        // right: 0;
+        // top: 55px;
+      }
     }
   }
 }

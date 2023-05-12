@@ -45,6 +45,28 @@
             </a>
           </div>
         </div>
+        <div class="header-top--mobile">
+          <ul class="header-top__menu">
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--home" href="index.html"></a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--heart" href="wish-list-page.html"></a>
+            </li>
+            <li class="header-top__item header-top__item--dropdown">
+              <a class="header-top__link header-top__link--select icon icon--user" href="log-in.html"></a>
+              <a class="header-top__link header-top__link--dropdown-content icon icon--register"
+                href="register.html">Регистрация</a>
+            </li>
+
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--question" id="question"></a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link icon icon--message" href="contacts.html"></a>
+            </li>
+          </ul>
+        </div>
         <div class="header-middle">
           <div class="header-middle__text">
             СЛУЖБА ДОСТАВКИ: <span>25130103</span>
@@ -58,6 +80,42 @@
         </div>
         <div class="header-bottom">
           <ul class="header-bottom__menu menu">
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="index.html#our-menu">Меню ресторана</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="sales.html">Акции и новинки</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="wok.html">Блюда WOK</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="business.html">БИЗНЕС ЛАНЧ</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="delivery.html">ДОСТАВКА</a>
+            </li>
+            <li class="header-bottom__item menu__item">
+              <a class="header-bottom__link menu__item" href="about.html">О НАС</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-bottom__mobile">
+          <div class="header-bottom__mobile-nav">
+            <div class="header-bottom__burger">
+              <button class="burger" type="button">
+                <span class="burger__line"></span>
+                <span class="sr-only">Открыть меню</span>
+              </button>
+              <span class="burger__text">Меню</span>
+            </div>
+            <div class="header-top__cart header-bottom__cart">
+              <p>Товаров <span>0</span></p>
+              <a class="header-top__cart-link icon icon--cart" href="#"></a>
+            </div>
+          </div>
+          <ul class="header-bottom__mobile-menu menu">
             <li class="header-bottom__item menu__item">
               <a class="header-bottom__link menu__item" href="index.html#our-menu">Меню ресторана</a>
             </li>
@@ -105,10 +163,10 @@
     </div>
   </form>
 </div>
-<div class="social">
+<!-- <div class="social">
   <a class="social__link icon icon--instagram" href="https://www.instagram.com/siga.lita/" target="_blank"></a>
   <a class="social__link icon icon--facebook" href="#"></a>
-</div>
+</div> -->
 
 <main class="main">
   <h1 class="sr-only">Акции в ресторане Hatimaki!!</h1>
@@ -293,7 +351,7 @@
       </a>
     </li>
     <li class="product-categories__item">
-      <a class="product-categories__link " href="#">
+      <a class="product-categories__link " href="wok.html">
         Блюда WOK
       </a>
     </li>
@@ -351,7 +409,7 @@
 </main>
 <footer class="footer">
   <div class="container">
-    <div class="footer__top">
+    <!-- <div class="footer__top">
       <p class="footer__text">
         Оставайся в курсе наших новостей и акций, оформив подписку на нашу рассылку.
       </p>
@@ -360,11 +418,14 @@
         <input type="text" class="footer__field" name="email" id="email" placeholder="Ваш Email...">
         <button class="footer__btn" type="submit">ПОДПИСАТЬСЯ</button>
       </form>
-    </div>
+    </div> -->
     <div class="footer__content">
       <ul class="footer__list">
         <li class="footer__item">
-          <h3 class="footer__item-name">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+          <button class="footer__item-name" type="button">
+            <span>КОНТАКТНАЯ ИНФОРМАЦИЯ</span>
+            <span class="footer__item-chevron icon icon--chevron-right"></span>
+          </button>
           <ul class="footer__item-list">
             <li class="footer__item-item">
               <a class="footer__item-link icon icon--location" href="#">Ресторона “Hatimaki”, Пушкинская улица</a>
@@ -381,7 +442,10 @@
           </ul>
         </li>
         <li class="footer__item">
-          <h3 class="footer__item-name">ИНФОРМАЦИЯ</h3>
+          <button class="footer__item-name" type="button">
+            <span>ИНФОРМАЦИЯ</span>
+            <span class="footer__item-chevron icon icon--chevron-right"></span>
+          </button>
           <ul class="footer__item-list">
             <li class="footer__item-item">
               Время работы
@@ -392,8 +456,11 @@
           </ul>
         </li>
         <li class="footer__item">
-          <h3 class="footer__item-name">ИНФОРМАЦИЯ ДЛЯ ПОКУПАТЕЛЕЙ</h3>
-          <ul class="foter__item-list">
+          <button class="footer__item-name" type="button">
+            <span>ИНФОРМАЦИЯ ДЛЯ ПОКУПАТЕЛЕЙ</span>
+            <span class="footer__item-chevron icon icon--chevron-right"></span>
+          </button>
+          <ul class="footer__item-list">
             <li class="footer__item-item">
               Понравившиеся товары <span>(0)</span>
             </li>
@@ -403,26 +470,31 @@
           </ul>
         </li>
         <li class="footer__item">
-          <h3 class="footer__item-name">НОВИНКИ</h3>
-          <ul class="novelties-sidebar__list">
-            <li class="novelties-sidebar__item">
-              <a class="novelties-sidebar__link" href="#">
-                Hot Seabass maki и Chiс...
-                <span class="novelties-sidebar__price">15.50€</span>
-              </a>
-            </li>
-            <li class="novelties-sidebar__item">
-              <a class="novelties-sidebar__link" href="#">
-                Hot Seabass maki и Bent...
-                <span class="novelties-sidebar__price">15.50€</span>
-              </a>
-            </li>
-            <li class="novelties-sidebar__item">
-              <a class="novelties-sidebar__link" href="#">
-                Big tuna maki и Cezar ma...
-                <span class="novelties-sidebar__price">15.50€</span>
-              </a>
-            </li>
+          <button class="footer__item-name" type="button">
+            <span>НОВИНКИ</span>
+            <span class="footer__item-chevron icon icon--chevron-right"></span>
+          </button>
+          <ul class="footer__item-list">
+            <ul class="novelties-sidebar__list">
+              <li class="novelties-sidebar__item">
+                <a class="novelties-sidebar__link" href="#">
+                  Hot Seabass maki и Chiс...
+                  <span class="novelties-sidebar__price">15.50€</span>
+                </a>
+              </li>
+              <li class="novelties-sidebar__item">
+                <a class="novelties-sidebar__link" href="#">
+                  Hot Seabass maki и Bent...
+                  <span class="novelties-sidebar__price">15.50€</span>
+                </a>
+              </li>
+              <li class="novelties-sidebar__item">
+                <a class="novelties-sidebar__link" href="#">
+                  Big tuna maki и Cezar ma...
+                  <span class="novelties-sidebar__price">15.50€</span>
+                </a>
+              </li>
+            </ul>
           </ul>
         </li>
       </ul>
@@ -433,7 +505,6 @@
 </div>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 
 </html>

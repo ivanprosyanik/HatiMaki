@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="container">
-    <div class="footer__top">
+    <!-- <div class="footer__top">
       <p class="footer__text">
         Оставайся в курсе наших новостей и акций, оформив подписку на нашу рассылку.
       </p>
@@ -9,11 +9,14 @@
         <input type="text" class="footer__field" name="email" id="email" placeholder="Ваш Email...">
         <button class="footer__btn" type="submit">ПОДПИСАТЬСЯ</button>
       </form>
-    </div>
+    </div> -->
     <div class="footer__content">
       <ul class="footer__list">
         <li class="footer__item">
-          <h3 class="footer__item-name">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+          <button class="footer__item-name" type="button">
+            <span>КОНТАКТНАЯ ИНФОРМАЦИЯ</span>
+            <span class="footer__item-chevron icon icon--chevron-right"></span>
+          </button>
           <ul class="footer__item-list">
             <li class="footer__item-item">
               <a class="footer__item-link icon icon--location" href="#">Ресторона “Hatimaki”, Пушкинская улица</a>
@@ -30,7 +33,10 @@
           </ul>
         </li>
         <li class="footer__item">
-          <h3 class="footer__item-name">ИНФОРМАЦИЯ</h3>
+          <button class="footer__item-name" type="button">
+            <span>ИНФОРМАЦИЯ</span>
+            <span class="footer__item-chevron icon icon--chevron-right"></span>
+          </button>
           <ul class="footer__item-list">
             <li class="footer__item-item">
               Время работы
@@ -41,8 +47,11 @@
           </ul>
         </li>
         <li class="footer__item">
-          <h3 class="footer__item-name">ИНФОРМАЦИЯ ДЛЯ ПОКУПАТЕЛЕЙ</h3>
-          <ul class="foter__item-list">
+          <button class="footer__item-name" type="button">
+            <span>ИНФОРМАЦИЯ ДЛЯ ПОКУПАТЕЛЕЙ</span>
+            <span class="footer__item-chevron icon icon--chevron-right"></span>
+          </button>
+          <ul class="footer__item-list">
             <li class="footer__item-item">
               Понравившиеся товары <span>(0)</span>
             </li>
@@ -52,26 +61,31 @@
           </ul>
         </li>
         <li class="footer__item">
-          <h3 class="footer__item-name">НОВИНКИ</h3>
-          <ul class="novelties-sidebar__list">
-            <li class="novelties-sidebar__item">
-              <a class="novelties-sidebar__link" href="#">
-                Hot Seabass maki и Chiс...
-                <span class="novelties-sidebar__price">15.50€</span>
-              </a>
-            </li>
-            <li class="novelties-sidebar__item">
-              <a class="novelties-sidebar__link" href="#">
-                Hot Seabass maki и Bent...
-                <span class="novelties-sidebar__price">15.50€</span>
-              </a>
-            </li>
-            <li class="novelties-sidebar__item">
-              <a class="novelties-sidebar__link" href="#">
-                Big tuna maki и Cezar ma...
-                <span class="novelties-sidebar__price">15.50€</span>
-              </a>
-            </li>
+          <button class="footer__item-name" type="button">
+            <span>НОВИНКИ</span>
+            <span class="footer__item-chevron icon icon--chevron-right"></span>
+          </button>
+          <ul class="footer__item-list">
+            <ul class="novelties-sidebar__list">
+              <li class="novelties-sidebar__item">
+                <a class="novelties-sidebar__link" href="#">
+                  Hot Seabass maki и Chiс...
+                  <span class="novelties-sidebar__price">15.50€</span>
+                </a>
+              </li>
+              <li class="novelties-sidebar__item">
+                <a class="novelties-sidebar__link" href="#">
+                  Hot Seabass maki и Bent...
+                  <span class="novelties-sidebar__price">15.50€</span>
+                </a>
+              </li>
+              <li class="novelties-sidebar__item">
+                <a class="novelties-sidebar__link" href="#">
+                  Big tuna maki и Cezar ma...
+                  <span class="novelties-sidebar__price">15.50€</span>
+                </a>
+              </li>
+            </ul>
           </ul>
         </li>
       </ul>
@@ -80,9 +94,7 @@
 </footer>
 
 </div>
-<script src="js/libs.min.js"></script>
-<script src="js/main.js"></script>
-
+@include('_scripts.html')
 </body>
 
 </html>
