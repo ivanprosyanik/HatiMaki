@@ -52,12 +52,24 @@
 
   &__content {
     padding: 23px 0 28px 33px;
+
+    @include r(768) {
+      padding: 33px 28px;
+    }
   }
 
   &__list {
     display: grid;
-    gap: 25px;
+    gap: size(25, 15);
     grid-template-columns: repeat(4, 1fr);
+
+    @include r(1200) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r(768) {
+      display: block;
+    }
   }
 
   &__item {
@@ -68,20 +80,81 @@
     .novelties-sidebar__item {
       padding: 10px 11px;
     }
+
+    @include r(768) {
+      padding-bottom: 26px;
+
+      &.open {
+        .footer__item-list {
+          opacity: 1;
+          overflow: visible;
+          max-height: fit-content;
+          padding-top: 32px;
+
+          .novelties-sidebar__list {
+            display: block;
+          }
+        }
+
+        .footer__item-chevron {
+          transform: rotate(90deg);
+        }
+      }
+    }
   }
 
   &__item-list {
     display: flex;
     flex-direction: column;
+    padding-top: 32px;
+
+    @include r(768) {
+      max-height: 0;
+      opacity: 0;
+      padding: 0;
+      overflow: hidden;
+      will-change: max-height;
+      box-sizing: content-box;
+      transition: all .3s ease-in-out;
+
+      .novelties-sidebar__list {
+        display: none;
+      }
+    }
   }
 
   &__item-name {
     font-weight: 500;
-    font-size: 19px;
+    font-size: size(19, 16);
+    white-space: nowrap;
+    display: flex;
     line-height: 1.5;
     padding-bottom: 13px;
-    margin-bottom: 32px;
+    padding-right: 60px;
     border-bottom: 1px solid #959494;
+    pointer-events: none;
+
+    @include r(768) {
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-right: 0;
+      pointer-events: all;
+      cursor: pointer;
+    }
+  }
+
+  &__item-chevron {
+    display: none;
+
+    @include r(768) {
+      display: flex;
+      transition: transform .3s ease-in-out;
+
+      &::before {
+        background-color: $c-white;
+      }
+    }
   }
 
   &__item-item {
@@ -100,7 +173,7 @@
 
   &__item-link {
     font-family: 'Open Sans', sans-serif;
-    font-size: 19px;
+    font-size: size(19, 14);
     font-weight: 500;
     color: $c-white;
     text-decoration: none;

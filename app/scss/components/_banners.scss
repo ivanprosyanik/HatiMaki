@@ -1,5 +1,6 @@
 .banners {
   margin-bottom: 69px;
+
   &__img {
     display: inline-block;
   }
@@ -7,8 +8,11 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr 405px;
-    padding: 0 14px;
-    // column-gap: 20px;
+    column-gap: size(20, 0);
+
+    @include r(1200) {
+      display: block;
+    }
   }
 
   &__slider {
@@ -16,7 +20,16 @@
     overflow: hidden;
     display: flex;
     position: relative;
+    z-index: 9;
     max-width: 945px;
+
+    @include r(1200) {
+      margin: 0 auto 15px;
+    }
+
+    @include r(992) {
+      grid-column: 2 span;
+    }
   }
 
   &__list {
@@ -86,10 +99,34 @@
     }
   }
 
+  &__actions {
+    @include r(992) {
+      display: none;
+    }
+  }
+
 }
 
-.banners-mini__img {
-  &:nth-child(1) {
-    margin-bottom: 50px;
+.banners-mini {
+  @include r(1200) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    max-width: fit-content;
+    object-fit: contain;
+    &:nth-child(1) {
+      margin-bottom: size(50, 20);
+
+      @include r(1200) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include r(992) {
+    display: none;
   }
 }
