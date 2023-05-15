@@ -1,5 +1,5 @@
 .novelties {
-  margin-bottom: 57px;
+  margin-bottom: size(57, 25);
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -9,11 +9,23 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px 12px;
+
+    @include r(876) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include r(576) {
+      margin: 0 auto;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
 .novelties-sidebar {
   max-width: 270px;
+  @include r(992) {
+    display: none;
+  }
 
   &__head {
     @extend .product-categories__head;

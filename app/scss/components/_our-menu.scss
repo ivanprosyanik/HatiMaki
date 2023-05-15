@@ -1,9 +1,21 @@
 .our-menu {
-  margin-bottom: 47px;
+  margin-bottom: size(47, 26);
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 258px);
-    gap: 28px 12px;
+    gap: 28px size(12, 5);
+
+    @include r(1060) {
+      grid-template-columns: repeat(3, 259px);
+    }
+
+    @include r(876) {
+      grid-template-columns: repeat(3, size(225, 171));
+    }
+
+    @include r(576) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
@@ -12,6 +24,13 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+
+    &--mobile {
+      display: none;
+      @include r(992) {
+        display: flex;
+      }
+    }
   }
 
   &__img{
@@ -22,7 +41,7 @@
 
   &__link {
     text-align: center;
-    font-size: 16px;
+    font-size: size(16, 12);
     font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;

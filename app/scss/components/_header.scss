@@ -4,6 +4,12 @@
   z-index: 10;
   margin-bottom: 63px;
 
+  .container {
+    @include r(576) {
+      padding: 0;
+    }
+  }
+
   @include r(1200) {
     margin-bottom: 30px;
   }
@@ -319,7 +325,7 @@
     left: 15px;
     right: 15px;
     transition: all .3s ease-in-out;
-    z-index: -1;
+    // z-index: -1;
 
     &.sticky {
       transition: all .3s ease-in-out;
@@ -330,7 +336,7 @@
     }
   }
 
-  @include r(375) {
+  @include r(576) {
     left: 0;
     right: 0;
   }
@@ -361,9 +367,7 @@
 
       &.show {
         transform: translateX(0);
-        // left: 0;
-        // right: 0;
-        // top: 55px;
+        z-index: 9999;
       }
     }
   }

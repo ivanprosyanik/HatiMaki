@@ -1,8 +1,22 @@
 .banners {
-  margin-bottom: 69px;
+  margin-bottom: size(69, 21);
+
+  .container {
+    @include r(576) {
+      padding: 0;
+    }
+  }
+
+  @include r(576) {
+    margin-bottom: 21px;
+  }
 
   &__img {
     display: inline-block;
+
+    @include r(576) {
+      max-height: 326px;
+    }
   }
 
   &__inner {
@@ -20,15 +34,20 @@
     overflow: hidden;
     display: flex;
     position: relative;
-    z-index: 9;
+    // z-index: 9;
     max-width: 945px;
 
     @include r(1200) {
       margin: 0 auto 15px;
+      z-index: initial !important;
     }
 
     @include r(992) {
       grid-column: 2 span;
+    }
+
+    @include r(576) {
+      height: 197px;
     }
   }
 
@@ -117,6 +136,7 @@
   &__img {
     max-width: fit-content;
     object-fit: contain;
+
     &:nth-child(1) {
       margin-bottom: size(50, 20);
 

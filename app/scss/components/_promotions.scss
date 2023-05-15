@@ -1,7 +1,24 @@
 .promotions {
-  margin-bottom: 67px;
+  margin-bottom: size(67, 38);
+
   &__nav {
     max-width: 1068px;
+  }
+
+  &__tabs {
+    @include r(768) {
+      flex-direction: column;
+      flex: 1;
+    }
+  }
+
+  &__item {
+    &--mobile {
+      @include r(768) {
+        border-bottom: 2px solid $c-white;
+        background-color: $accent;
+      }
+    }
   }
 
   &__content {
@@ -20,6 +37,16 @@
     text-decoration: none;
     color: #fff;
     padding: 17px 11px;
+
+    @include r(768) {
+      display: block;
+
+      .product-nav__name {
+        &:active{
+          background-color: $accent;
+        }
+      }
+    }
   }
 
   &__link.active {

@@ -26,10 +26,6 @@ body {
   max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
-
-  @include r(375) {
-    padding: 0;
-  }
 }
 
 .sr-only {
@@ -61,10 +57,10 @@ body {
 }
 
 .section-title {
-  padding: 16px 9px;
-  font-size: 19px;
+  padding: size(16, 8) 9px;
+  font-size: size(19, 16);
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: size(40, 22);
   max-width: 1068px;
   background-color: #2c2525;
 }
