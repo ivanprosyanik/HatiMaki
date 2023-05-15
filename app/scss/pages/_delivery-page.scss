@@ -21,4 +21,10 @@
       margin-bottom: 20px;
     }
   }
+
+  .product-categories {
+    @include r(992) {
+      display: none;
+    }
+  }
 }

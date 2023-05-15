@@ -6,7 +6,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
-    gap: 50px 19px;
+    gap: size(50, 20) size(19, 5);
+
+    @include r(992) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r(768) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -14,7 +23,7 @@
     &-title {
       font-weight: 400;
       font-size: 19px;
-      margin-bottom: 15px;
+      margin-bottom: size(15, 10);
       padding-left: 15px;
     }
 
@@ -32,7 +41,7 @@
     background-size: cover;
     background-position: center;
     height: 245px;
-    margin-bottom: 15px;
+    margin-bottom: size(15, 5);
     padding: 0;
   }
 }
