@@ -4,6 +4,10 @@
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 39px;
 
+  @include r(576) {
+    display: none;
+  }
+
   &__content {
     display: flex;
     justify-content: center;
@@ -12,7 +16,7 @@
   }
 
   &__title {
-    font-size: 36px;
+    font-size: size(36, 25);
     font-weight: 500;
   }
 
@@ -26,13 +30,13 @@
     border-radius: 7px;
     gap: 12px;
     color: $c-white;
-    font-size: 36px;
+    font-size: size(36, 25);
     font-weight: 500;
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
 
     &::before {
-      min-width: 28px;
-      height: 28px;
+      min-width: size(28, 20);
+      height: size(28, 20);
       order: 2;
     }
 

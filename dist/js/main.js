@@ -79,6 +79,30 @@ document.addEventListener("DOMContentLoaded", () => {
       nextEl: '.product-slider__btn--next',
       prevEl: '.product-slider__btn--prev',
     },
+
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+      },
+      576: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 6,
+      },
+      768: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 12,
+      },
+      992: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 12,
+      },
+
+    }
   });
 
   const product1 = new Swiper('.product-slider--1, .product-slider--2', {
@@ -99,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const globalNav = document.querySelector('.global-nav');
-  if (globalNav) {
+  if (globalNav && window.innerWidth >= 992) {
     window.onscroll = () => {
       if (window.pageYOffset > 899) {
         globalNav.classList.add("sticky");
@@ -141,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       self.classList.toggle('open');
 
-      if(self.classList.contains('open')) {
+      if (self.classList.contains('open')) {
         content.style.maxHeight = content.scrollHeight + 'px';
       } else {
         content.style.maxHeight = null;

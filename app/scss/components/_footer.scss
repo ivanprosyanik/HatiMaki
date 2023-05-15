@@ -8,13 +8,21 @@
     justify-content: space-between;
     align-items: center;
     gap: 12px;
+
+    @include r(992) {
+      flex-direction: column;
+    }
   }
 
   &__text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: size(16, 14);
     font-weight: 600;
     font-style: italic;
+
+    @include r(375) {
+      max-width: 353px;
+    }
   }
 
   &__form {
@@ -24,15 +32,26 @@
     width: 48%;
     background-color: $c-white;
     position: relative;
+
+    @include r(768) {
+      width: 100%;
+      flex-direction: column;
+      background-color: transparent;
+    }
   }
 
   &__field {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    font-size: 16;
+    font-size: 16px;
     color: $c-black;
     width: 75%;
     padding: 10px 14px;
+
+    @include r(768) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
     &::placeholder {
       color: $c-black;
@@ -48,6 +67,13 @@
     padding: 9px 15px;
     font-size: 16px;
     font-weight: 500;
+
+    @include r(768) {
+      position: initial;
+      display: block;
+      width: 100%;
+      background-color: #e2b167;
+    }
   }
 
   &__content {

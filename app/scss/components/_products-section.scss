@@ -1,14 +1,22 @@
 .product {
   margin-bottom: 24px;
 
+  @include r(992) {
+    display: none;
+  }
+
   &__inner {
-    display: grid;
-    grid-template-columns: 1fr 270px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr; 
+    // column-gap: size(36, 0);
+    display: flex;
+    justify-content: space-between;
+    gap: size(36, 0);
   }
 
   &__content {
-    position: relative;
-    max-width: 1068px;
+    position: relative;   
+    max-width: size(1064, 500); 
   }
 
   &-content__item {
@@ -199,8 +207,9 @@
   &__name {
     text-decoration: none;
     color: $c-white;
-    padding: 17px 11px;
+    padding: 17px size(11, 5);
     transition: background-color .3s ease-in-out;
+    font-size: size(19, 15);
 
     &:hover {
       background-color: $accent;

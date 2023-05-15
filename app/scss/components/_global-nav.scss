@@ -6,8 +6,12 @@
   margin-bottom: 22px;
   transition: all .3s ease-in-out;
 
+  @include r(992) {
+    display: none;
+  }
+
   &.sticky {
-    position: sticky;  
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -17,13 +21,13 @@
 
   &__menu {
     @extend .header-bottom__menu;
-
+    font-size: size(19, 15);
   }
 
   &__link {
     @extend .header-bottom__link;
-    padding: 25px 47px;
-    position: sticky;
+    padding: size(25, 15) size(47, 20);
+
     &:hover {
       background-color: $accent;
       color: $c-white;
