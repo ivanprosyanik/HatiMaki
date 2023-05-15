@@ -1,0 +1,13 @@
+.sales {
+
+  &__inner {
+    @include r(576) {
+      display: block;
+    }
+  }
+  .product-categories {
+    @include r(992) {
+      display: none;
+    }
+  }
+}

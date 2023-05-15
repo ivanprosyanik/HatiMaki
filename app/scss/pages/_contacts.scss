@@ -9,7 +9,12 @@
   &__list {
     display: grid;
     grid-template-columns: 105px repeat(3, 1fr);
-    gap: 66px;
+    gap: size(66, 20);
+
+    @include r(992) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__name {

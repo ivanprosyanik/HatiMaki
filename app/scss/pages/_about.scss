@@ -1,11 +1,11 @@
 .about {
-  margin-bottom: 100px;
+  margin-bottom: size(100, 0);
   &__container {
     max-width: 1030px;
   }
 
   &__title {
-    margin-bottom: 73px;
+    margin-bottom: size(73, 25);
   }
 
   &__text {
@@ -26,27 +26,41 @@
       max-width: 1025px;
 
       p:not(:last-child) {
-        margin-bottom: 60px;
+        margin-bottom: size(60, 20);
       }
+    }
+
+    @include r(1200) {
+      max-width: 800px;
     }
   }
 
   &__photos {
     display: flex;
-    gap: 20px;
+    gap: size(20, 10);
 
     &--interior {
-      padding: 40px 0 60px;
+      padding: size(40, 15) 0 size(60, 20);
     }
 
     &--people {
-      padding: 60px 0 50px;
-      gap: 40px;
+      padding: size(60, 20) 0 size(50, 15);
+      gap: size(40, 10);
     }
 
     &--center {
-      padding: 34px 0 100px;
+      padding: size(34, 15) 0 size(100, 20);
       justify-content: center;
+    }
+
+    @include r(992) {
+      flex-direction: column;
+    }
+  }
+
+  .product-categories {
+    @include r(992) {
+      display: none;
     }
   }
 }

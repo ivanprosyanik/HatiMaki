@@ -67,16 +67,35 @@ body {
 
 .simple-title {
   font-weight: 400;
-  font-size: 25px;
+  font-size: size(25, 16);
   color: $c-black;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  margin-bottom: size(28, 15);
+
+  @include r(992) {
+    font-weight: 700;
+  }
 }
 
 .categories__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 12px;
+
+  @include r(1200) {
+    grid-template-columns: repeat((3, 1fr));
+  }
+
+  @include r(768) {
+    grid-template-columns: repeat((2, 1fr));
+  }
+
+  @include r(576) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 362px;
+  }
 }
 
 .icon {
@@ -322,5 +341,11 @@ body {
   &--active &__line {
     transform: scale(0);
     transition: transform 0.3s ease-in-out;
+  }
+}
+
+section {
+  @include r(992) {
+    padding-top: 26px;
   }
 }

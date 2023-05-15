@@ -1,5 +1,10 @@
 .wish-list {
   margin-bottom: 30px;
+
+  @include r(992) {
+    padding-top: 26px;
+  }
+
   &__text {
     color: $c-black;
     font-weight: 400;

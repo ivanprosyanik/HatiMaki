@@ -6,9 +6,6 @@
   }
 
   &__inner {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr; 
-    // column-gap: size(36, 0);
     display: flex;
     justify-content: space-between;
     gap: size(36, 0);
@@ -87,7 +84,7 @@
 
 .product-categories {
 
-  max-width: 270px;
+  max-width: size(270, 200);
 
   &__head {
     background-color: $accent;
