@@ -1,10 +1,14 @@
 .sales {
+  @include r(992) {
+    padding-top: 26px;
+  }
 
   &__inner {
     @include r(576) {
       display: block;
     }
   }
+
   .product-categories {
     @include r(992) {
       display: none;

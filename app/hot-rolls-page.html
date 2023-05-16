@@ -54,13 +54,18 @@
               <a class="header-top__link icon icon--heart" href="wish-list-page.html"></a>
             </li>
             <li class="header-top__item header-top__item--dropdown">
-              <a class="header-top__link header-top__link--select icon icon--user" href="log-in.html"></a>
-              <a class="header-top__link header-top__link--dropdown-content icon icon--register"
-                href="register.html">Регистрация</a>
+              <button class="header-top__item--select icon icon--user"></button>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="log-in.html">Вход</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="register.html">Регистрация</a>
+                </li>
+              </ul>
             </li>
-
             <li class="header-top__item">
-              <a class="header-top__link icon icon--question" id="question"></a>
+              <a class="header-top__link icon icon--question question" id="question"></a>
             </li>
             <li class="header-top__item">
               <a class="header-top__link icon icon--message" href="contacts.html"></a>
@@ -170,7 +175,7 @@
 
 <main class="main">
   <h1 class="sr-only">Запеченные роллы, в ресторане Hatimaki!!</h1>
-  <section class="sashimi">
+  <section class="hot-rolls">
     <div class="container">
       <div class="section-inner sashimi__inner">
         <div class="product-categories">

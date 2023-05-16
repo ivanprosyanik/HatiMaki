@@ -86,6 +86,10 @@
 
   max-width: size(270, 200);
 
+  @include r(992) {
+    display: none;
+  }
+
   &__head {
     background-color: $accent;
     padding: 14px 28px;

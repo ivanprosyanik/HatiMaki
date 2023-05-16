@@ -53,6 +53,15 @@ body {
   &.sashimi__inner {
     justify-content: initial;
     gap: 20px;
+
+    @include r(576) {
+      justify-content: center;
+    }
+  }
+
+  @include r(992) {
+    justify-content: center;
+    padding-top: 26px;
   }
 }
 
@@ -74,6 +83,16 @@ body {
 
   @include r(992) {
     font-weight: 700;
+  }
+
+  // @include r(576) {
+  //   transform: translateX(-37%);
+  // }
+}
+
+.section-offset {
+  @include r(576) {
+    padding-top: 26px;
   }
 }
 
@@ -341,11 +360,5 @@ body {
   &--active &__line {
     transform: scale(0);
     transition: transform 0.3s ease-in-out;
-  }
-}
-
-section {
-  @include r(992) {
-    padding-top: 26px;
   }
 }

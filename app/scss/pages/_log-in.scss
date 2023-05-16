@@ -5,6 +5,18 @@
   font-size: 25px;
   margin-bottom: 45px;
 
+  .section-inner {
+    @include r(992) {
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    @include r(768) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__form {
     width: 100%;
   }
@@ -20,12 +32,12 @@
 
   &__label {
     margin-bottom: 19px;
-    font-size: 22px;
+    font-size: size(22, 18);
   }
 
   &__field {
     width: 100%;
-    font-size: 22px;
+        font-size: size(22, 18);
     padding: 12px 21px;
     border: 1px solid #d9d9d9;
 
@@ -48,15 +60,19 @@
 }
 
 .log-in-box {
-  max-width: 591px;
+  max-width: size(591, 450);
   padding: 24px;
   flex-grow: 1;
   background-color: #f8f8f8;
 
+  @include r(992) {
+    max-width: size(450, 320);
+  }
+
   &__span {
     display: block;
     width: 100%;
-    height: 69px;
+    height: size(69, 40);
     background-color: $c-white;
     margin-bottom: 9px;
   }
@@ -64,14 +80,18 @@
   &__name {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: size(25, 22);
     margin-bottom: 45px;
+
+    @include r(576) {
+      font-size: size(22, 18);
+    }
   }
 
   &__text {
     max-width: 546px;
-    font-size: 19px;
-    margin-bottom: 189px;
+    font-size: size(19, 16);
+    margin-bottom: size(189, 80);
   }
 
   &__bottom {
