@@ -1,6 +1,10 @@
 .contacts {
   color: $c-black;
   font-family: 'Open Sans', sans-serif;
+  
+  @include r(992) {
+    padding-top: 26px;
+  }
 
   &__inner {
     margin-bottom: 20px;

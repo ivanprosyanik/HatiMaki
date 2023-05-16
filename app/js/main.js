@@ -1,23 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const questionBtn = document.getElementById('question');
+  const questionBtn = document.querySelectorAll('#question');
   const modal = document.querySelector('.modal');
   const modalClose = document.querySelector('.modal__close-btn');
   const body = document.querySelector('body');
 
-  if (questionBtn) {
-    questionBtn.addEventListener('click', () => {
+  questionBtn.forEach(el => {
+    el.addEventListener('click', () => {
       modal.classList.add('active');
       body.classList.add('lock');
     });
-  }
+  });
 
   if (modalClose) {
     modalClose.addEventListener('click', () => {
       modal.classList.remove('active');
       body.classList.remove('lock');
     });
-  }
+  };
+
   const banners = new Swiper('.banners__slider', {
     slidesPerView: 1,
     loop: true,
@@ -173,4 +174,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const headerSelect = document.querySelector('.header-top__item--select');
+  const selectDropdown = document.querySelector('.dropdown__list');
+
+  if (headerSelect) {
+    headerSelect.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('active');
+      selectDropdown.classList.toggle('active');
+    });
+  };
 });

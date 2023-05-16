@@ -133,6 +133,75 @@
         display: flex;
       }
     }
+
+    &--select {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 15px;
+
+      &::after {
+        content: '';
+        min-width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 3px;
+        top: 5px;
+        background-color: $c-white;
+        mask-image: url(../images/sprite.svg#icon-select);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        transform: rotate(-180deg);
+        transition: transform .3s ease-in-out;
+      }
+
+      &.active {
+        background-color: $accent;
+
+        &::after {
+        transform: rotate(0);
+        }
+      }
+    }
+
+    .dropdown__list {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -90px;
+      padding: 15px;
+      background-color: #2e2e2e;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .dropdown__link {
+      color: $c-white;
+      font-size: 15px;
+      font-weight: 400;
+      text-decoration: none;
+      display: flex;
+      flex-grow: 1;
+      padding: 5px;
+
+      &:focus {
+        background-color: $accent;
+      }
+
+      &:active {
+        background-color: $accent;
+      }
+    }
   }
 
   &__cart {
@@ -182,17 +251,11 @@
   }
 
   .header-top__link {
-    padding: 12px 15px 8px 15px;
+    padding: 12px 15px;
 
     &::before {
       min-width: 20px;
       height: 20px;
-    }
-
-    &--select {
-      &::after {
-        content: none;
-      }
     }
   }
 
@@ -297,6 +360,8 @@
     white-space: nowrap;
     background-color: transparent;
     transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    display: flex;
+    flex-grow: 1;
 
     &:hover {
       background-color: $c-white;

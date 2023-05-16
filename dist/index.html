@@ -54,13 +54,18 @@
               <a class="header-top__link icon icon--heart" href="wish-list-page.html"></a>
             </li>
             <li class="header-top__item header-top__item--dropdown">
-              <a class="header-top__link header-top__link--select icon icon--user" href="log-in.html"></a>
-              <a class="header-top__link header-top__link--dropdown-content icon icon--register"
-                href="register.html">Регистрация</a>
+              <button class="header-top__item--select icon icon--user"></button>
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="log-in.html">Вход</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="register.html">Регистрация</a>
+                </li>
+              </ul>
             </li>
-
             <li class="header-top__item">
-              <a class="header-top__link icon icon--question" id="question"></a>
+              <a class="header-top__link icon icon--question question" id="question"></a>
             </li>
             <li class="header-top__item">
               <a class="header-top__link icon icon--message" href="contacts.html"></a>
@@ -1110,10 +1115,10 @@
         <a class="our-menu__link" href="wok.html">БЛЮДА WOK</a>
       </li>
       <li class="our-menu__item our-menu__item--mobile">
-        <a class="our-menu__img-link" href="wok.html">
+        <a class="our-menu__img-link" href="all-sushi.html">
           <img class="our-menu__img" src="images/products/our-menu/sushi.jpg" alt="menu 2">
         </a>
-        <a class="our-menu__link" href="wok.html">СУШИ</a>
+        <a class="our-menu__link" href="all-sushi.html">СУШИ</a>
       </li>
       <li class="our-menu__item">
         <a class="our-menu__img-link" href="pasta.html">

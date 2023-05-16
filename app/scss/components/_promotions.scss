@@ -51,5 +51,9 @@
 
   &__link.active {
     background-color: $accent;
+
+    @include r(768) {
+      pointer-events: none;
+    }
   }
 }

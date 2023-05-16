@@ -13,7 +13,7 @@
 
   &__img {
     display: inline-block;
-
+    
     @include r(576) {
       max-height: 326px;
     }
@@ -38,8 +38,8 @@
     max-width: 945px;
 
     @include r(1200) {
-      margin: 0 auto 15px;
       z-index: initial !important;
+      margin: 0 auto 15px;
     }
 
     @include r(992) {

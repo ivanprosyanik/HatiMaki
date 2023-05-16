@@ -1,5 +1,10 @@
 .about {
   margin-bottom: size(100, 0);
+
+  @include r(992) {
+    padding-top: 26px;
+  }
+
   &__container {
     max-width: 1030px;
   }

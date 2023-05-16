@@ -2,6 +2,10 @@
   color: $c-black;
   margin-bottom: 50px;
 
+  @include r(992) {
+    padding-top: 26px;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
