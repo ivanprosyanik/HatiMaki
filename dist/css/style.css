@@ -2882,6 +2882,9 @@ body {
   min-height: 324px;
   position: relative;
 }
+.wok__cart-item .wok-card {
+  margin-bottom: 15px;
+}
 .wok__cart-item:not(:last-child)::after {
   content: "+";
   font-size: 96px;

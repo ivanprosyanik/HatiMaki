@@ -136,6 +136,10 @@
     min-height: 324px;
     position: relative;
 
+    .wok-card {
+      margin-bottom: 15px;
+    }
+
     &:not(:last-child) {
       &::after {
         content: '+';
