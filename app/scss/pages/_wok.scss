@@ -55,22 +55,59 @@
     font-weight: 400;
     text-decoration: none;
     color: $c-black;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+
+    &.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: '';
+        min-width: 160px;
+        height: 160px;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        z-index: 5;
+        mask-repeat: no-repeat;
+        mask-image: url(../images/sprite.svg#icon-cart);
+        background-color: $c-white;
+      }
+
+      .wok-card__img {
+        opacity: .5;
+      }
+    }
+
+    &:hover {
+      opacity: .5;
+
+      .wok-card__img {
+
+        transform: rotate(20deg) scale(1.2);
+      }
+    }
   }
 }
 
 .wok-card {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // text-align: center;
   justify-content: space-between;
+
   &__img {
     margin-bottom: 10px;
+    transition: transform .3s ease-in-out;
+  }
+
+  &__head {
+    overflow: hidden;
   }
 
   &__name,
   &__price {
     display: block;
+    color: $c-black;
   }
 
   &__name {
@@ -117,6 +154,7 @@
     color: $c-black;
     font-weight: 300;
     font-size: 15px;
+    margin-bottom: 40px;
   }
 
   &-info {
@@ -141,6 +179,7 @@
     width: 70px;
     padding: 5px;
     border: 1px solid #d9d9d9;
+    text-align: center;
   }
 
   &-link {

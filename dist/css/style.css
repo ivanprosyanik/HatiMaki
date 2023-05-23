@@ -2794,6 +2794,48 @@ body {
   font-weight: 400;
   text-decoration: none;
   color: #000;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.wok__link.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.wok__link.active::before {
+  content: "";
+  min-width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  z-index: 5;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-image: url(../images/sprite.svg#icon-cart);
+          mask-image: url(../images/sprite.svg#icon-cart);
+  background-color: #fff;
+}
+.wok__link.active .wok-card__img {
+  opacity: 0.5;
+}
+.wok__link:hover {
+  opacity: 0.5;
+}
+.wok__link:hover .wok-card__img {
+  -webkit-transform: rotate(20deg) scale(1.2);
+      -ms-transform: rotate(20deg) scale(1.2);
+          transform: rotate(20deg) scale(1.2);
 }
 
 .wok-card {
@@ -2803,9 +2845,18 @@ body {
 }
 .wok-card__img {
   margin-bottom: 10px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.wok-card__head {
+  overflow: hidden;
 }
 .wok-card__name, .wok-card__price {
   display: block;
+  color: #000;
 }
 .wok-card__name {
   margin-bottom: 15px;
@@ -2847,6 +2898,7 @@ body {
   color: #000;
   font-weight: 300;
   font-size: 15px;
+  margin-bottom: 40px;
 }
 .wok__cart-info {
   border-top: 1px solid #d9d9d9;
@@ -2874,6 +2926,7 @@ body {
   width: 70px;
   padding: 5px;
   border: 1px solid #d9d9d9;
+  text-align: center;
 }
 .wok__cart-link {
   background-color: #c7a168;
