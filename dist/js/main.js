@@ -186,10 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-
   const wokLink = document.querySelectorAll('.wok__link');
   const fullPrice = document.querySelector('.wok__cart-price');
 
@@ -212,8 +208,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const normalPrice = (num) => {
     const str = String(num.toFixed(2));
     return str.replace(/(\d)(?=(\d{3})+\.)/g, '$1 ');
-    // return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '); 
-    // return String(str).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 '); 
   };
 
   const plusFullPrice = (currentPrice) => {
@@ -253,8 +247,11 @@ document.addEventListener("DOMContentLoaded", () => {
       printFullPrice();
 
 
-
-      self.classList.add('active');
+      if (self.classList.contains('active')) {
+        self.classList.remove('active');
+      } else {
+        self.classList.add('active');
+      }
 
 
       mainDishIdItem = mainDishItem.getAttribute('data-name');
@@ -269,6 +266,35 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (id === sauceIdItem) {
         sauceItem.insertAdjacentHTML('beforeend', generateCartProduct(img, title, priceNumber, id));
       };
+      const nestedMainElements = mainDishItem.querySelectorAll('.wok-card');
+      const nestedGarnishElements = garnishItem.querySelectorAll('.wok-card');
+      const nestedSauceElements = sauceItem.querySelectorAll('.wok-card');
+      console.log(nestedMainElements);
+      nestedMainElements.forEach(el => {
+        el.addEventListener('click', () => {
+          self.classList.remove('active');
+          el.remove();
+          minusFullPrice(priceNumber);
+          printFullPrice();
+        });
+      });
+      nestedGarnishElements.forEach(el => {
+        el.addEventListener('click', () => {
+          el.remove();
+          self.classList.remove('active');
+          minusFullPrice(priceNumber);
+          printFullPrice();
+
+        });
+      });
+      nestedSauceElements.forEach(el => {
+        el.addEventListener('click', () => {
+          el.remove();
+          self.classList.remove('active');
+          minusFullPrice(priceNumber);
+          printFullPrice();
+        });
+      });
     });
   });
 });
