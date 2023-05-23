@@ -2884,6 +2884,7 @@ body {
 }
 .wok__cart-item .wok-card {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .wok__cart-item:not(:last-child)::after {
   content: "+";
