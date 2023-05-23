@@ -183,4 +183,85 @@ document.addEventListener("DOMContentLoaded", () => {
       selectDropdown.classList.toggle('active');
     });
   };
+
+
+
+
+
+
+
+  const wokLink = document.querySelectorAll('.wok__link');
+  const wokCartItem = document.querySelectorAll('.wok__cart-item');
+  const wokQuantity = document.querySelector('.wok__cart-field');
+  const fullPrice = document.querySelector('.wok__cart-price');
+  const cartProductList = document.querySelector('.wok__cart-item');
+  let price = 0;
+
+  const randomId = () => {
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+  };
+
+  const priceWithoutSpaces = (str) => {
+    return str.replace(/\s/g, '');
+  };
+
+  const normalPrice = (str) => {
+    return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '); 
+  };
+
+  const plusFullPrice = (currentPrice) => {
+    return price += currentPrice;
+  };
+
+  const printFullPrice = () => {
+    fullPrice.textContent = `${normalPrice(price)} €`;
+  };
+
+  const minusFullPrice = (currentPrice) => {
+    return price -= currentPrice;
+  };
+
+  const generateCartProduct = (img, title, price, id) => {
+    return `
+    
+    <article class="wok-card" data-id="${id}">
+      <img class="wok-card__img" src="${img}" alt="Основное блюдо для">
+      <span class="wok-card__name">${title}</span>
+      <span class="wok-card__price">${price} €</span>
+    </article>
+    `;
+  }
+
+  wokLink.forEach(el => {
+    el.closest('.wok__item').setAttribute('data-id', randomId());
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      let self = e.currentTarget;
+      let parent = self.closest('.wok__item');
+      let id = parent.dataset.id;
+      let img = parent.querySelector('.wok-card__img').getAttribute('src');
+      let title = parent.querySelector('.wok-card__name').textContent;
+      // let priceString = parent.querySelector('.wok-card__price').textContent;
+      let priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.wok-card__price').textContent));
+
+
+
+      plusFullPrice(priceNumber);
+      console.log(price);
+      cartProductList.insertAdjacentHTML('beforeend', generateCartProduct(img, title, priceNumber, id));
+      printFullPrice();
+
+      self.classList.toggle('active');
+    });
+  });
+
+
+
+
+
+
+
+
+
+
 });
