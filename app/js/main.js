@@ -185,15 +185,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
 
-
   const wokLink = document.querySelectorAll('.wok__link');
   const fullPrice = document.querySelector('.wok__cart-price');
-
+  const cartField = document.querySelector('.wok__cart-field');
 
   const mainDishItem = document.getElementById('main-dish-item');
   const garnishItem = document.getElementById('garnish-item');
   const sauceItem = document.getElementById('sauce-item');
-
 
   let price = 0;
 
@@ -211,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const plusFullPrice = (currentPrice) => {
-    return price += currentPrice;
+    price += currentPrice;
   };
 
   const printFullPrice = () => {
@@ -219,82 +217,71 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const minusFullPrice = (currentPrice) => {
-    return price -= currentPrice;
+    price -= currentPrice;
   };
 
   const generateCartProduct = (img, title, price, id) => {
     return `
-    
     <article class="wok-card" data-name="${id}">
       <img class="wok-card__img" src="${img}" alt="Основное блюдо для">
       <span class="wok-card__name">${title}</span>
       <span class="wok-card__price">${price + '0'} €</span>
     </article>
-    `;
-  }
+  `;
+  };
+
+  const addToCart = (self, id, img, title, priceNumber) => {
+    self.classList.add('active');
+    const cartItemContainer = getCartItemContainer(id);
+    if (cartItemContainer) {
+      cartItemContainer.insertAdjacentHTML('beforeend', generateCartProduct(img, title, priceNumber, id));
+      const cartItem = cartItemContainer.querySelector(`[data-name="${id}"]`);
+      cartItem.addEventListener('click', () => {
+        removeFromCart(self, cartItem, priceNumber);
+      });
+    }
+    plusFullPrice(priceNumber);
+    printFullPrice();
+  };
+
+  const removeFromCart = (self, cartItem, priceNumber) => {
+    self.classList.remove('active');
+    cartItem.remove();
+    minusFullPrice(priceNumber);
+    printFullPrice();
+  };
+
+  const getCartItemContainer = (id) => {
+    if (id === mainDishItem.getAttribute('data-name')) {
+      return mainDishItem;
+    }
+    if (id === garnishItem.getAttribute('data-name')) {
+      return garnishItem;
+    }
+    if (id === sauceItem.getAttribute('data-name')) {
+      return sauceItem;
+    }
+    return null;
+  };
 
   wokLink.forEach(el => {
     el.addEventListener('click', (e) => {
       e.preventDefault();
-      let self = e.currentTarget;
-      let parent = self.closest('.wok__item');
-      let id = el.getAttribute('data-name');
-      let img = parent.querySelector('.wok-card__img').getAttribute('src');
-      let title = parent.querySelector('.wok-card__name').textContent;
-      let priceNumber = parseFloat(priceWithoutSpaces(parent.querySelector('.wok-card__price').textContent));
-      plusFullPrice(priceNumber);
-      console.log(price);
-      printFullPrice();
-
+      const self = e.currentTarget;
+      const parent = self.closest('.wok__item');
+      const id = self.getAttribute('data-name');
+      const img = parent.querySelector('.wok-card__img').getAttribute('src');
+      const title = parent.querySelector('.wok-card__name').textContent;
+      const priceNumber = parseFloat(priceWithoutSpaces(parent.querySelector('.wok-card__price').textContent));
 
       if (self.classList.contains('active')) {
-        self.classList.remove('active');
+        const cartItemContainer = getCartItemContainer(id);
+        const cartItem = cartItemContainer.querySelector(`[data-name="${id}"]`);
+        removeFromCart(self, cartItem, priceNumber);
       } else {
-        self.classList.add('active');
+        addToCart(self, id, img, title, priceNumber);
+        cartField.value = '1';
       }
-
-
-      mainDishIdItem = mainDishItem.getAttribute('data-name');
-      garnishIdItem = garnishItem.getAttribute('data-name');
-      sauceIdItem = sauceItem.getAttribute('data-name');
-
-
-      if (id === mainDishIdItem) {
-        mainDishItem.insertAdjacentHTML('beforeend', generateCartProduct(img, title, priceNumber, id));
-      } else if (id === garnishIdItem) {
-        garnishItem.insertAdjacentHTML('beforeend', generateCartProduct(img, title, priceNumber, id));
-      } else if (id === sauceIdItem) {
-        sauceItem.insertAdjacentHTML('beforeend', generateCartProduct(img, title, priceNumber, id));
-      };
-      const nestedMainElements = mainDishItem.querySelectorAll('.wok-card');
-      const nestedGarnishElements = garnishItem.querySelectorAll('.wok-card');
-      const nestedSauceElements = sauceItem.querySelectorAll('.wok-card');
-      console.log(nestedMainElements);
-      nestedMainElements.forEach(el => {
-        el.addEventListener('click', () => {
-          self.classList.remove('active');
-          el.remove();
-          minusFullPrice(priceNumber);
-          printFullPrice();
-        });
-      });
-      nestedGarnishElements.forEach(el => {
-        el.addEventListener('click', () => {
-          el.remove();
-          self.classList.remove('active');
-          minusFullPrice(priceNumber);
-          printFullPrice();
-
-        });
-      });
-      nestedSauceElements.forEach(el => {
-        el.addEventListener('click', () => {
-          el.remove();
-          self.classList.remove('active');
-          minusFullPrice(priceNumber);
-          printFullPrice();
-        });
-      });
     });
   });
 });
