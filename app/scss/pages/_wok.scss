@@ -3,6 +3,10 @@
   &__inner {
     justify-content: initial;
     gap: 34px;
+
+    @include r(992) {
+      justify-content: center;
+    }
   }
 
   &__title {
@@ -14,6 +18,7 @@
     font-weight: 400;
     color: $c-black;
     margin-bottom: 25px;
+    font-size: size(19, 14);
 
     .accent {
       margin-top: 22px;
@@ -28,7 +33,7 @@
     &-title {
       padding: 14px 20px;
       font-weight: 500;
-      font-size: 20px;
+      font-size: size(20, 16);
       margin-bottom: 15px;
       background-color: $accent;
     }
@@ -38,6 +43,15 @@
     display: grid;
     grid-template-columns: repeat(4, 236px);
     gap: 40px 20px;
+
+    @include r(1200) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include r(576) {
+      // grid-template-columns: repeat(3, 1fr);
+      display: block;
+    }
   }
 
   &__item {
@@ -47,7 +61,13 @@
     align-items: center;
     text-align: center;
     padding: 0 18px 20px;
-    min-height: 286px;
+    min-height: size(286, 200);
+
+    @include r(576) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__link {
@@ -118,7 +138,7 @@
 .wok__cart {
   &-box {
     border: 1px solid #d9d9d9;
-    padding: 22px 25px;
+    padding: 22px size(25, 12);
   }
 
   &-list {
@@ -126,15 +146,33 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
     margin-bottom: 77px;
+
+    @include r(768) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @include r(576) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-item {
     border: 1px solid $accent;
-    padding: 14px 40px;
+    padding: 14px size(40, 25);
     text-align: center;
     max-width: 245px;
+    width: 100%;
     min-height: 324px;
     position: relative;
+
+    @include r(768) {
+      flex-grow: 1;
+    }
+
+    
 
     .wok-card {
       margin-bottom: 15px;
@@ -151,6 +189,10 @@
         right: -60px;
         top: 50%;
         transform: translateY(-50%);
+
+        @include r(1200) {
+          content: none;
+        }
       }
     }
   }
@@ -167,6 +209,7 @@
     padding-top: 18px;
     display: flex;
     justify-content: flex-end;
+    // gap: size(10, 5);
     gap: 10px;
     color: $c-black;
     align-items: center;
@@ -175,9 +218,13 @@
   &-price {
     display: block;
     font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
+    font-size: size(32, 24);
     font-weight: 400;
     margin-right: 24px;
+
+    @include r(576) {
+      margin-right: 0;
+    }
   }
 
   &-field {
